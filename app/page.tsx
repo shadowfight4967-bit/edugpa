@@ -103,10 +103,10 @@ export default function Home() {
               Explore Guides
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a href="https://cgpahub.com" target="_blank" rel="noopener noreferrer" className="btn-secondary w-full sm:w-auto text-lg">
+            <Link href="/blog" className="btn-secondary w-full sm:w-auto text-lg">
               <Calculator className="w-5 h-5" />
               CGPA Calculator
-            </a>
+            </Link>
           </div>
         </div>
       </section>
