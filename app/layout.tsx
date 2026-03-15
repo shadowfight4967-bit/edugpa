@@ -81,9 +81,7 @@ const organizationSchema = {
     width: 1200,
     height: 630,
   },
-  sameAs: [
-    "https://cgpahub.com",
-  ],
+  
   description: SITE_DESCRIPTION,
 };
 
