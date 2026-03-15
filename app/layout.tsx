@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     site: "@edugpa",
   },
   verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+    google: "gjF1vSDac9jf25TAfMDX4HeyNpIrTnVw8tXOYxi7vVo",
   },
 };
 
