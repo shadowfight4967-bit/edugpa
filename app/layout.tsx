@@ -22,7 +22,6 @@ export const metadata: Metadata = {
   keywords: [
     "GPA calculator",
     "CGPA calculator",
-    "SGPA calculator online",
     "grade point average",
     "academic GPA guide",
     "CGPA to percentage",
