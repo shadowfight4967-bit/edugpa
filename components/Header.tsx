@@ -75,15 +75,7 @@ export default function Header() {
                                 {link.label}
                             </Link>
                         ))}
-                        <a
-                            href="https://cgpahub.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 btn-primary w-full py-4 text-lg"
-                        >
-                            <Calculator className="w-6 h-6" />
-                            CGPA Hub
-                        </a>
+                      
                     </nav>
                 </div>
             )}
