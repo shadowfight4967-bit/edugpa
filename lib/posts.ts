@@ -57,6 +57,15 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         category: "Study Tips",
         readTime: "8 min read",
     },
+    {
+        slug: "common-tech-problems-students-face",
+        title: "Common Tech Problems Students Face While Studying & Gaming (And How to Fix Them)",
+        excerpt:
+            "From Wi-Fi lag during Zoom calls to controller connectivity issues while gaming — learn how to troubleshoot and fix the most common tech problems students face.",
+        date: "2026-03-20",
+        category: "Tech Tips",
+        readTime: "12 min read",
+    },
 ];
 
 export function getAllSlugs(): string[] {
