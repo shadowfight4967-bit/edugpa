@@ -66,6 +66,33 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         category: "Tech Tips",
         readTime: "12 min read",
     },
+    {
+        slug: "academic-performance-tracking-strategies",
+        title: "Mastering Your GPA: Proven Strategies for Academic Performance Tracking",
+        excerpt:
+            "Learn how to track and improve your academic performance with effective goal-setting and the top GPA calculator and academic tools available online.",
+        date: "2026-04-14",
+        category: "Study Tips",
+        readTime: "6 min read",
+    },
+    {
+        slug: "essential-online-tools-python-courses-students",
+        title: "The Student Tech Stack: Essential Online Tools and Data Science Careers",
+        excerpt:
+            "Discover the top 5 online tools every student should use and explore Python data science bootcamps and courses to future-proof your career.",
+        date: "2026-04-14",
+        category: "Career Development",
+        readTime: "8 min read",
+    },
+    {
+        slug: "how-technology-is-changing-education-2026",
+        title: "The Future of Learning: How EdTech is Reshaping the Student Experience in 2026",
+        excerpt:
+            "Explore how technology is changing education today, from AI-driven personalization to hybrid learning models. Learn how institutions are adapting to keep students ahead.",
+        date: "2026-04-14",
+        category: "Academic Success",
+        readTime: "7 min read",
+    },
 ];
 
 export function getAllSlugs(): string[] {

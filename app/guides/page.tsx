@@ -36,7 +36,7 @@ export default function GuidesPage() {
         },
     };
 
-    const categories = ["All", "GPA Basics", "Conversions", "Calculations", "Study Tips", "Global Education", "Tech Tips"];
+    const categories = ["All", "GPA Basics", "Conversions", "Calculations", "Study Tips", "Global Education", "Tech Tips", "Career Development", "Academic Success"];
 
     return (
         <>
