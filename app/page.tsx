@@ -212,7 +212,7 @@ export default function Home() {
                   </p>
                 </div>
                 <a href="https://cgpahub.com" target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto px-10 py-5 text-xl font-black hover:gap-6 bg-white text-slate-900 hover:bg-white shadow-none border-none">
-                  Open Engine
+Cgpa Hub
                   <ExternalLink className="w-6 h-6" />
                 </a>
               </div>
