@@ -56,6 +56,7 @@ export default function Footer() {
                         <h3 className="text-white font-medium mb-6 text-sm uppercase tracking-wider">Academic Tools</h3>
                         <ul className="space-y-3">
                             {[
+                                { name: "SRM CGPA Calculator", url: "/srm-cgpa-calculator" },
                                 { name: "GPA to Percentage", url: "/guides/percentage-to-cgpa-conversion" },
                                 { name: "SGPA Tracker", url: "/guides/how-to-track-sgpa-each-semester" },
                             ].map((tool) => (

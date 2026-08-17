@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
     title: `About Our Mission — ${SITE_NAME}`,
-    description: "Learn about the team behind EduGPA.online and our dedication to academic transparency and student success.",
+    description: "Learn about the mission behind EduGPA.online and our dedication to providing accurate academic tracking and conversion tools.",
     path: "/about",
 });
 
@@ -14,7 +14,7 @@ export default function AboutPage() {
         "@context": "https://schema.org",
         "@type": "AboutPage",
         name: "About EduGPA.online",
-        description: "EduGPA.online is a dedicated platform for academic grade conversion and tracking.",
+        description: "EduGPA.online is an independent utility platform for academic grade conversion and tracking.",
         publisher: {
             "@type": "Organization",
             name: SITE_NAME,
@@ -25,27 +25,27 @@ export default function AboutPage() {
     const values = [
         {
             title: "Accuracy First",
-            desc: "Our formulas are derived from official university registrar guidelines across 20+ countries.",
+            desc: "Our formulas are meticulously derived from official university registrar guidelines.",
             Icon: Target,
-            color: "text-blue-600 bg-white/50",
+            color: "text-violet-600 bg-white shadow-sm",
         },
         {
             title: "Clarity Over Complexity",
             desc: "We simplify dense academic jargon so you can focus on your actual studies.",
             Icon: Users,
-            color: "text-indigo-600 bg-white/50",
+            color: "text-fuchsia-600 bg-white shadow-sm",
         },
         {
             title: "Student Centric",
-            desc: "Every feature we build is tested by real students to ensure it solves a real problem.",
+            desc: "Every feature we build is designed to solve real academic planning problems.",
             Icon: Heart,
-            color: "text-cyan-600 bg-white/50",
+            color: "text-pink-600 bg-white shadow-sm",
         },
         {
             title: "Data Integrity",
-            desc: "Your grades are private. We never store personal academic data on our servers.",
+            desc: "Your grades are completely private. We never store personal academic data.",
             Icon: ShieldCheck,
-            color: "text-blue-500 bg-white/50",
+            color: "text-purple-500 bg-white shadow-sm",
         },
     ];
 
@@ -53,75 +53,95 @@ export default function AboutPage() {
         <>
             <JsonLd data={aboutSchema} />
 
-            {/* Hero Header */}
-            <section className="pt-24 pb-20 relative overflow-hidden">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <div className="inline-flex items-center gap-2 bg-white/40 backdrop-blur-md text-blue-700 px-5 py-2.5 rounded-full text-xs font-black mb-8 animate-fade-in shadow-xl shadow-blue-500/10 border border-white/50">
-                        <GraduationCap className="w-4 h-4" />
-                        Empowering the Next Generation
+            <section className="bg-slate-50 pt-20 pb-12 border-b border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div className="inline-flex items-center gap-2 bg-white text-slate-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 shadow-sm border border-slate-200">
+                        <GraduationCap className="w-4 h-4 text-violet-600" />
+                        Our Mission
                     </div>
-                    <h1 className="text-5xl md:text-8xl font-black text-slate-900 mb-10 animate-fade-in-up tracking-tighter leading-tight uppercase italic">
-                        Mission: <br /> <span className="gradient-text">Success</span>.
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                        About EduGPA.online
                     </h1>
-                    <p className="text-xl md:text-2xl text-slate-600 leading-relaxed animate-fade-in-up animation-delay-100 font-medium">
-                        EduGPA was born out of a simple frustration: academic grading is unnecessarily complicated. We built the world&apos;s most transparent resource.
+                    <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
+                        Dedicated to academic transparency and providing reliable tools for students navigating complex grading systems.
                     </p>
                 </div>
             </section>
 
-            {/* Main Content Glass Card */}
-            <section className="section bg-transparent pt-0">
+            <section className="section bg-white pt-16 pb-32">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="card-glass p-8 md:p-16 space-y-12">
-                        <div className="bg-gradient-to-br from-blue-600 to-indigo-700 p-10 md:p-14 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-                            <div className="relative z-10">
-                                <p className="text-white font-black text-2xl md:text-4xl italic leading-tight m-0">
-                                    &quot;We believe every student deserves to understand their academic standing without needing a degree in mathematics.&quot;
+
+                    <div className="bento-card bg-gradient-to-br from-violet-600 to-fuchsia-700 p-8 md:p-12 text-white mb-16 relative overflow-hidden shadow-2xl border-none">
+                        <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-3xl font-black mb-4 drop-shadow-sm">
+                                    Our Core Philosophy
+                                </h2>
+                                <p className="text-violet-50 text-base leading-relaxed font-medium">
+                                    "We believe every student deserves to understand their academic standing clearly, without needing to navigate complex, obscure mathematical formulas."
                                 </p>
-                                <p className="mt-8 text-blue-200 font-black uppercase tracking-widest text-sm">— The EduGPA Core Team</p>
                             </div>
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-3xl -mr-32 -mt-32" />
-                        </div>
-
-                        <div className="space-y-8 prose prose-slate prose-xl max-w-none text-slate-600 font-medium leading-relaxed">
-                            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight uppercase">Built by Students</h2>
-                            <p>
-                                In 2024, our founders noticed a recurring pattern: students were missing out on scholarship opportunities simply because they didn&apos;t know how to accurately convert their local percentage scores to global CGPA scales.
-                            </p>
-                            <p>
-                                We decided to build a platform that put **clarity and user experience** at the forefront. No ads, no jargon, just results.
-                            </p>
-
-                            <div className="pt-10 grid sm:grid-cols-2 gap-8 not-prose">
-                                {values.map((v, i) => (
-                                    <div key={i} className="p-8 rounded-3xl bg-white/30 backdrop-blur-xl border border-white/50 shadow-sm hover:scale-[1.03] transition-transform">
-                                        <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-sm ${v.color}`}>
-                                            <v.Icon className="w-7 h-7" />
+                            <div className="space-y-4">
+                                {values.slice(0, 3).map((v, i) => (
+                                    <div key={i} className="flex items-start gap-3 text-base font-bold text-white">
+                                        <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                            <v.Icon className="w-3 h-3 text-white" />
                                         </div>
-                                        <h3 className="text-slate-900 font-black text-xl mb-4 uppercase tracking-tight">{v.title}</h3>
-                                        <p className="text-sm leading-relaxed text-slate-500 font-bold m-0 opacity-80">{v.desc}</p>
+                                        {v.title}
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                        {/* Decorative background blur */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[80px] -mr-20 -mt-20 rounded-full" />
+                    </div>
 
-                            <h2 className="text-3xl md:text-5xl font-black text-slate-900 pt-16 tracking-tight uppercase">Global Standards</h2>
+                    <div className="prose prose-slate max-w-none text-slate-700 space-y-12 prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-blue-600">
+                        <div>
+                            <h2>An Independent Educational Utility</h2>
                             <p>
-                                Today, EduGPA serve thousands of students daily across India, Bangladesh, Pakistan, and the US. We&apos;ve partnered with academic advisors to ensure our engine reflects the latest global standards.
+                                EduGPA.online was established to address a recurring pattern in academia: students missing out on scholarships, internships, or higher education opportunities simply because they lacked the tools to accurately track or convert their academic standing (CGPA, SGPA, and Percentages).
+                            </p>
+                            <p>
+                                As an independent platform, we are wholly focused on providing tools that strictly adhere to official university grading algorithms. Our calculators do not rely on approximations; they are built to mirror the exact mathematics utilized by university examination boards, such as the standard 10-point scales used globally.
                             </p>
                         </div>
 
-                        <div className="mt-24 p-12 bg-slate-900 rounded-[3rem] text-center text-white relative overflow-hidden">
-                            <div className="relative z-10">
-                                <h3 className="text-3xl md:text-4xl font-black mb-8 uppercase tracking-tight">Need Support?</h3>
-                                <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto font-medium">Our team is always ready to assist with complex conversion queries or direct feedback.</p>
-                                <Link href="/contact" className="btn-primary bg-white text-slate-900 hover:bg-white inline-flex text-lg font-black px-12 py-5 shadow-none group">
-                                    Reach Out Now
-                                    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                                </Link>
-                            </div>
-                            <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-600/10 blur-[100px] -ml-40 -mb-40" />
+                        <div>
+                            <h2>Privacy by Design</h2>
+                            <p>
+                                We fundamentally believe that your academic data belongs to you alone. EduGPA.online is built entirely on modern client-side technologies. This means that when you use our tools, the calculations are executed directly within your web browser. 
+                            </p>
+                            <p>
+                                <strong>We do not collect, transmit, or store your course grades or academic standing on any external servers.</strong> Your privacy is guaranteed by our architecture.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 grid sm:grid-cols-2 gap-6 not-prose">
+                            {values.map((v, i) => (
+                                <div key={i} className="bento-card p-6 bg-slate-50 border-slate-200">
+                                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 ${v.color}`}>
+                                        <v.Icon className="w-6 h-6" />
+                                    </div>
+                                    <h3 className="text-slate-900 font-bold text-lg mb-2">{v.title}</h3>
+                                    <p className="text-sm leading-relaxed text-slate-600 m-0">{v.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
+
+                    <div className="mt-20 bento-card p-10 bg-slate-900 text-center text-white relative overflow-hidden shadow-xl border-none">
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-black mb-4">Have Questions or Feedback?</h3>
+                            <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto font-medium">We continually refine our tools based on user feedback. If you notice a discrepancy with a specific university grading scale, let us know.</p>
+                            <Link href="/contact" className="btn-primary bg-white text-slate-900 hover:bg-slate-100 inline-flex text-sm font-bold px-8 py-3 shadow-sm group">
+                                Contact Us
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                        </div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-violet-600/20 blur-[80px] -ml-20 -mb-20 rounded-full" />
+                    </div>
+
                 </div>
             </section>
         </>

@@ -234,24 +234,29 @@ export default function Home() {
 
             {/* Other tools */}
             <div className="flex flex-col gap-6">
-                {[
-                { name: "Grammarly", desc: "Best-in-class writing assistant.", url: "https://www.grammarly.com" },
-                { name: "Zotero", desc: "Open-source reference manager.", url: "https://www.zotero.org" }
-                ].map((tool) => (
+                <Link
+                    href="/srm-cgpa-calculator"
+                    className="bento-card p-6 flex-1 flex flex-col justify-center group hover:bg-slate-50 transition-colors"
+                >
+                    <h3 className="font-bold text-slate-900 text-xl mb-2">SRM Calculator</h3>
+                    <p className="text-slate-500 text-sm mb-4">Official 10-point scale CGPA calculator for SRM students.</p>
+                    <span className="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Open Tool <ArrowRight className="w-4 h-4" />
+                    </span>
+                </Link>
+                
                 <a
-                    key={tool.name}
-                    href={tool.url}
+                    href="https://www.grammarly.com"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    className="bento-card p-6 flex-1 flex flex-col justify-center group hover:bg-slate-50"
+                    className="bento-card p-6 flex-1 flex flex-col justify-center group hover:bg-slate-50 transition-colors"
                 >
-                    <h3 className="font-bold text-slate-900 text-xl mb-2">{tool.name}</h3>
-                    <p className="text-slate-500 text-sm mb-4">{tool.desc}</p>
+                    <h3 className="font-bold text-slate-900 text-xl mb-2">Grammarly</h3>
+                    <p className="text-slate-500 text-sm mb-4">Best-in-class academic writing assistant.</p>
                     <span className="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Visit Site <ArrowRight className="w-4 h-4" />
+                        Visit Site <ExternalLink className="w-4 h-4" />
                     </span>
                 </a>
-                ))}
             </div>
           </div>
         </div>
