@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
     title: `Privacy Policy — ${SITE_NAME}`,
-    description: "Our privacy policy outlines how we handle data, cookies, and third-party advertising partners like Google AdSense.",
+    description: "Comprehensive Privacy Policy outlining our data collection, processing, and protection protocols at EduGPA.",
     path: "/privacy-policy",
 });
 
@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         "@context": "https://schema.org",
         "@type": "WebPage",
         name: "Privacy Policy - EduGPA.online",
-        description: "Privacy policy for the EduGPA platform, detailing our data practices and advertising networks.",
+        description: "Official Privacy Policy document for the EduGPA academic platform.",
         publisher: {
             "@type": "Organization",
             name: SITE_NAME,
@@ -26,141 +26,138 @@ export default function PrivacyPolicy() {
         <>
             <JsonLd data={websiteSchema} />
 
-            {/* Hero Header */}
-            <section className="pt-24 pb-16 relative overflow-hidden">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <Link href="/" className="inline-flex items-center gap-3 text-sm font-black text-blue-600 mb-12 hover:gap-6 transition-all group">
-                        <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
-                        Homepage Sync
+            <section className="pt-24 pb-16 relative overflow-hidden bg-slate-50 border-b border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+                        <ArrowLeft className="w-4 h-4" />
+                        Return to Homepage
                     </Link>
-                    <div className="inline-flex items-center gap-3 bg-white/40 backdrop-blur-md text-emerald-700 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-10 shadow-xl shadow-emerald-500/10 border border-white/50">
-                        <ShieldCheck className="w-5 h-5" />
-                        AdSense Compliant Privacy
+                    <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider mb-6 border border-emerald-200">
+                        <ShieldCheck className="w-4 h-4" />
+                        Legally Binding Document
                     </div>
-                    <h1 className="text-5xl md:text-9xl font-black text-slate-900 mb-10 tracking-tighter uppercase italic leading-[0.95] animate-fade-in-up">
-                        Privacy <br /> <span className="gradient-text">Policy</span>.
+                    <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+                        Privacy Policy
                     </h1>
-                    <p className="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100 font-bold italic opacity-70">
-                        Transparency in data handling, advertising, and your online rights.
+                    <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-medium">
+                        Effective Date: August 17, 2026. This comprehensive document details our commitment to safeguarding your academic and personal data.
                     </p>
                 </div>
             </section>
 
-            {/* Main Content Glass Reader */}
-            <section className="section bg-transparent pt-0 pb-40">
+            <section className="section bg-white pt-16 pb-32">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                    <div className="card-glass p-8 md:p-16 shadow-2xl border-white/80">
-                        {/* Summary Box Dark Glass */}
-                        <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white mb-24 shadow-2xl relative overflow-hidden">
-                            <div className="relative z-10 grid md:grid-cols-2 gap-16 items-center">
-                                <div>
-                                    <h2 className="text-3xl font-black mb-8 flex items-center gap-4 uppercase tracking-tight italic">
-                                        <Lock className="w-8 h-8 text-blue-400" />
-                                        Summary
-                                    </h2>
-                                    <p className="text-slate-400 text-lg font-bold leading-relaxed mb-0 italic">
-                                        We respect your privacy. This policy explains our data practices, cookie usage, and how third-party advertising networks operate on our site.
-                                    </p>
-                                </div>
-                                <div className="space-y-6">
-                                    {[
-                                        "No Personal Data Sold",
-                                        "Google AdSense Compliant",
-                                        "Cookie Control Options",
-                                        "GDPR & CCPA Verified"
-                                    ].map((item, i) => (
-                                        <div key={i} className="flex items-center gap-4 text-sm font-black uppercase tracking-widest">
-                                            <div className="w-6 h-6 rounded-full bg-blue-500/20 shadow-inner flex items-center justify-center text-blue-400">
-                                                <ShieldCheck className="w-4 h-4" />
-                                            </div>
-                                            {item}
-                                        </div>
-                                    ))}
-                                </div>
+                    
+                    <div className="bento-card bg-gradient-to-br from-emerald-500 to-teal-700 p-8 md:p-12 text-white mb-16 relative overflow-hidden shadow-2xl border-none">
+                        <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-3xl font-black mb-4 flex items-center gap-3 drop-shadow-sm">
+                                    <Lock className="w-8 h-8 text-emerald-200" />
+                                    Executive Summary
+                                </h2>
+                                <p className="text-emerald-50 text-base leading-relaxed font-medium">
+                                    EduGPA operates on a principle of data minimization. We do not require account creation, nor do we permanently store your specific course grades on centralized servers. Calculations are performed locally on your device where possible. 
+                                </p>
                             </div>
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] -mr-48 -mt-48" />
+                            <div className="space-y-4">
+                                {[
+                                    "No Academic Data Sold to Third Parties",
+                                    "Compliant with GDPR, CCPA & FERPA Guidelines",
+                                    "Transparent Cookie & Ad Tracking Policies",
+                                    "Strict Decentralized Processing Architecture"
+                                ].map((item, i) => (
+                                    <div key={i} className="flex items-start gap-3 text-base font-bold text-white">
+                                        <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                            <ShieldCheck className="w-3 h-3 text-white" />
+                                        </div>
+                                        {item}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        {/* Decorative background blur */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[80px] -mr-20 -mt-20 rounded-full" />
+                    </div>
+
+                    <div className="prose prose-slate max-w-none text-slate-700 space-y-12 prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-blue-600">
+
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Eye className="w-5 h-5 text-slate-400" />
+                                1. Information Collection and Processing
+                            </h2>
+                            <p>
+                                At EduGPA.online (accessible from https://edugpa.online), the privacy of our students, educators, and visitors is of paramount importance. This document details the types of information we collect, record, and how we utilize it to provide our academic calculation services.
+                            </p>
+                            <p>
+                                <strong>Voluntarily Provided Data:</strong> When utilizing our calculators, the numerical data (credits, grade points, percentages) you input is processed strictly to generate the requested output. We do not permanently store this academic data in relational databases tied to your personal identity.
+                            </p>
+                            <p>
+                                <strong>Automatically Collected Data:</strong> As is standard practice for modern web infrastructure, we collect technical metadata to ensure platform security and optimization. This includes Internet Protocol (IP) addresses, browser type, Internet Service Provider (ISP) routing, referring/exit pages, operating systems, and timestamp data.
+                            </p>
                         </div>
 
-                        <div className="prose prose-slate prose-xl max-w-none text-slate-700 font-medium space-y-16">
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Cookie className="w-5 h-5 text-slate-400" />
+                                2. Cookies, Web Beacons, and Advertising
+                            </h2>
+                            <p>
+                                EduGPA.online utilizes "cookies" to optimize the user experience. These small text files store user preferences and record the pages accessed during a session. This allows us to customize our web page content based on visitors' browser types and other non-identifying information.
+                            </p>
+                            <p><strong>Google DoubleClick DART Cookie:</strong></p>
+                            <p>
+                                Google is a designated third-party vendor on our platform. Google uses DART cookies to serve contextual advertisements to our site visitors based upon their visit to EduGPA.online and other sites on the internet. Visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy directly at: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer">https://policies.google.com/technologies/ads</a>.
+                            </p>
+                            <p><strong>Advertising Partners Privacy Policies:</strong></p>
+                            <p>
+                                Third-party ad servers or networks use technologies like cookies, JavaScript, or Web Beacons within their advertisements and links appearing on EduGPA.online. These technologies are sent directly to users' browsers, automatically receiving your IP address in the process. They are utilized to measure the effectiveness of advertising campaigns and to personalize the advertising content you encounter. EduGPA.online exercises no access to or control over these cookies used by third-party advertisers.
+                            </p>
+                        </div>
 
-                            <div id="intro" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-600 shadow-sm border border-white/50">
-                                        <Eye className="w-6 h-6" />
-                                    </div>
-                                    01. Information We Collect
-                                </h2>
-                                <p>
-                                    At EduGPA.online, accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by EduGPA.online and how we use it. 
-                                </p>
-                                <p>
-                                    If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in EduGPA.online.
-                                </p>
-                            </div>
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Globe className="w-5 h-5 text-slate-400" />
+                                3. Consumer Privacy Rights (CCPA & GDPR)
+                            </h2>
+                            <p>
+                                We deeply respect international privacy frameworks. Depending on your jurisdiction, you may have specific rights regarding your personal data.
+                            </p>
+                            <p><strong>California Consumer Privacy Act (CCPA):</strong></p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>The right to request disclosure of the specific pieces of personal data we have collected.</li>
+                                <li>The right to request the deletion of any personal data collected.</li>
+                                <li>The right to demand that a business selling consumer data halts the sale of said data ("Do Not Sell My Personal Information").</li>
+                            </ul>
+                            <p><strong>General Data Protection Regulation (GDPR):</strong></p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li><strong>Right to Access & Rectification:</strong> You may request copies of your personal data or request corrections to inaccurate information.</li>
+                                <li><strong>Right to Erasure:</strong> You may request that we erase your personal data under specific conditions.</li>
+                                <li><strong>Right to Restrict or Object to Processing:</strong> You possess the right to restrict or entirely object to our processing of your personal data under certain conditions.</li>
+                            </ul>
+                            <p>
+                                To exercise any of these rights, please contact our Data Protection Officer via the Contact page. We are legally bound to respond within 30 days of receipt.
+                            </p>
+                        </div>
 
-                            <div id="logfiles" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-indigo-600/10 flex items-center justify-center text-indigo-600 shadow-sm border border-white/50">
-                                        <FileText className="w-6 h-6" />
-                                    </div>
-                                    02. Log Files
-                                </h2>
-                                <p>
-                                    EduGPA.online follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&apos; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.
-                                </p>
-                            </div>
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <FileText className="w-5 h-5 text-slate-400" />
+                                4. Children's Information Protection
+                            </h2>
+                            <p>
+                                Adding protection for children while using the internet is a core priority. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+                            </p>
+                            <p>
+                                EduGPA.online does not knowingly collect any Personally Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will execute our best efforts to promptly remove such information from our records.
+                            </p>
+                        </div>
 
-                            <div id="cookies" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-orange-600/10 flex items-center justify-center text-orange-600 shadow-sm border border-white/50">
-                                        <Cookie className="w-6 h-6" />
-                                    </div>
-                                    03. Cookies & Ads
-                                </h2>
-                                <p>
-                                    Like any other website, EduGPA.online uses &apos;cookies&apos;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited.
-                                </p>
-                                <p className="font-bold">Google DoubleClick DART Cookie</p>
-                                <p>
-                                    Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">https://policies.google.com/technologies/ads</a>
-                                </p>
-                                <p className="font-bold">Advertising Partners Privacy Policies</p>
-                                <p>
-                                    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on EduGPA.online, which are sent directly to users&apos; browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
-                                </p>
-                                <p>Note that EduGPA.online has no access to or control over these cookies that are used by third-party advertisers.</p>
-                            </div>
-
-                            <div id="rights" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-emerald-600/10 flex items-center justify-center text-emerald-600 shadow-sm border border-white/50">
-                                        <Globe className="w-6 h-6" />
-                                    </div>
-                                    04. GDPR & CCPA Rights
-                                </h2>
-                                <p className="font-bold">CCPA Privacy Rights (Do Not Sell My Personal Information)</p>
-                                <p>Under the CCPA, among other rights, California consumers have the right to request that a business that collects a consumer&apos;s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers. Request that a business delete any personal data about the consumer that a business has collected. If you make a request, we have one month to respond to you.</p>
-                                <p className="font-bold">GDPR Data Protection Rights</p>
-                                <p>Every user is entitled to the following: The right to access, rectification, erasure, restrict processing, object to processing, and data portability. If you make a request, we have one month to respond to you.</p>
-                            </div>
-
-                            <div id="updates" className="space-y-6">
-                                <h2 className="text-3xl font-black text-slate-900 m-0 uppercase tracking-tight italic">05. Updates</h2>
-                                <p>
-                                    Standard updates to this protocol are released quarterly or as required by law.
-                                </p>
-                                <div className="p-6 rounded-2xl bg-slate-900 text-white inline-block font-black uppercase text-[10px] tracking-widest shadow-xl">
-                                    Last Revised: August 2026
-                                </div>
-                            </div>
-
-                            <div className="pt-20 border-t border-white/40">
-                                <Link href="/contact" className="text-blue-600 font-black text-xl italic flex items-center gap-4 hover:gap-8 transition-all group uppercase tracking-widest leading-none">
-                                    Contact Us For Privacy Inquiries
-                                    <ChevronRight className="w-8 h-8 group-hover:scale-150 transition-transform" />
-                                </Link>
-                            </div>
+                        <div className="pt-12 mt-12 border-t border-slate-200">
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                                Submit a Data Subject Access Request (DSAR)
+                                <ChevronRight className="w-4 h-4" />
+                            </Link>
                         </div>
                     </div>
                 </div>

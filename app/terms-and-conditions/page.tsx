@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
     title: `Terms and Conditions — ${SITE_NAME}`,
-    description: "Terms and Conditions outlining the rules, regulations, and guidelines for using EduGPA.online.",
+    description: "Binding legal terms and conditions governing the use of the EduGPA academic calculation platform.",
     path: "/terms-and-conditions",
 });
 
@@ -26,142 +26,125 @@ export default function TermsAndConditions() {
         <>
             <JsonLd data={websiteSchema} />
 
-            {/* Hero Header */}
-            <section className="pt-24 pb-16 relative overflow-hidden">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <Link href="/" className="inline-flex items-center gap-3 text-sm font-black text-blue-600 mb-12 hover:gap-6 transition-all group">
-                        <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
-                        Homepage Sync
+            <section className="pt-24 pb-16 relative overflow-hidden bg-slate-50 border-b border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+                        <ArrowLeft className="w-4 h-4" />
+                        Return to Homepage
                     </Link>
-                    <div className="inline-flex items-center gap-3 bg-white/40 backdrop-blur-md text-emerald-700 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-10 shadow-xl shadow-emerald-500/10 border border-white/50">
-                        <Scale className="w-5 h-5" />
+                    <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider mb-6 border border-blue-200">
+                        <Scale className="w-4 h-4" />
                         Platform Guidelines
                     </div>
-                    <h1 className="text-5xl md:text-9xl font-black text-slate-900 mb-10 tracking-tighter uppercase italic leading-[0.95] animate-fade-in-up">
-                        Terms & <br /> <span className="gradient-text">Conditions</span>.
+                    <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+                        Terms & Conditions
                     </h1>
-                    <p className="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100 font-bold italic opacity-70">
-                        The rules and regulations for the use of our educational tools.
+                    <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-medium">
+                        These Terms and Conditions govern your access to and use of EduGPA.online. Please read these terms carefully before utilizing our calculation algorithms.
                     </p>
                 </div>
             </section>
 
-            {/* Main Content Glass Reader */}
-            <section className="section bg-transparent pt-0 pb-40">
+            <section className="section bg-white pt-16 pb-32">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <div className="card-glass p-8 md:p-16 shadow-2xl border-white/80">
-                        {/* Summary Box Dark Glass */}
-                        <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white mb-24 shadow-2xl relative overflow-hidden">
-                            <div className="relative z-10 grid md:grid-cols-2 gap-16 items-center">
-                                <div>
-                                    <h2 className="text-3xl font-black mb-8 flex items-center gap-4 uppercase tracking-tight italic">
-                                        <BookOpen className="w-8 h-8 text-blue-400" />
-                                        Summary
-                                    </h2>
-                                    <p className="text-slate-400 text-lg font-bold leading-relaxed mb-0 italic">
-                                        By accessing this website we assume you accept these terms and conditions. Do not continue to use EduGPA.online if you do not agree to take all of the terms and conditions stated on this page.
-                                    </p>
-                                </div>
-                                <div className="space-y-6">
-                                    {[
-                                        "Educational Purposes Only",
-                                        "No Warranty of Accuracy",
-                                        "User Responsibility",
-                                        "Acceptable Use Policy"
-                                    ].map((item, i) => (
-                                        <div key={i} className="flex items-center gap-4 text-sm font-black uppercase tracking-widest">
-                                            <div className="w-6 h-6 rounded-full bg-blue-500/20 shadow-inner flex items-center justify-center text-blue-400">
-                                                <Scale className="w-4 h-4" />
-                                            </div>
-                                            {item}
-                                        </div>
-                                    ))}
-                                </div>
+                    <div className="bento-card bg-gradient-to-br from-blue-600 to-indigo-700 p-8 md:p-12 text-white mb-16 relative overflow-hidden shadow-2xl border-none">
+                        <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-3xl font-black mb-4 flex items-center gap-3 drop-shadow-sm">
+                                    <BookOpen className="w-8 h-8 text-blue-200" />
+                                    Agreement Acceptance
+                                </h2>
+                                <p className="text-blue-50 text-base leading-relaxed font-medium">
+                                    By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use EduGPA.online if you do not agree to accept all of the terms and conditions stated on this page.
+                                </p>
                             </div>
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] -mr-48 -mt-48" />
+                            <div className="space-y-4">
+                                {[
+                                    "Platform Provided 'As Is' Without Academic Warranty",
+                                    "Intellectual Property Retained by EduGPA",
+                                    "User Bears Responsibility for Final Submission",
+                                    "Strict Acceptable Use Policy Enforced"
+                                ].map((item, i) => (
+                                    <div key={i} className="flex items-start gap-3 text-base font-bold text-white">
+                                        <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                            <Scale className="w-3 h-3 text-white" />
+                                        </div>
+                                        {item}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        {/* Decorative background blur */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[80px] -mr-20 -mt-20 rounded-full" />
+                    </div>
+
+                    <div className="prose prose-slate max-w-none text-slate-700 space-y-12 prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-blue-600">
+
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <FileText className="w-5 h-5 text-slate-400" />
+                                1. Interpretation and Definitions
+                            </h2>
+                            <p>
+                                The following terminology applies to these Terms and Conditions, Privacy Statement, and Disclaimer Notice: "Client", "You", and "Your" refers to you, the person logging onto this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our", and "Us", refers to our Company. 
+                            </p>
+                            <p>
+                                All terms refer to the offer, acceptance, and consideration of payment (or usage of free services) necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of the provision of the Company’s stated services, in accordance with and subject to prevailing law.
+                            </p>
                         </div>
 
-                        <div className="prose prose-slate prose-xl max-w-none text-slate-700 font-medium space-y-16">
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <AlertCircle className="w-5 h-5 text-slate-400" />
+                                2. Intellectual Property Rights
+                            </h2>
+                            <p>
+                                Unless otherwise stated, EduGPA.online and/or its licensors own the intellectual property rights for all material on EduGPA.online, including but not limited to the underlying proprietary calculation algorithms, UI/UX design, academic guides, and graphical assets. All intellectual property rights are reserved.
+                            </p>
+                            <p>You may access this from EduGPA.online for your own personal educational use subjected to restrictions set in these terms and conditions. You must not:</p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>Republish material from EduGPA.online in academic papers without citation.</li>
+                                <li>Sell, rent, or sub-license material or software components from EduGPA.online.</li>
+                                <li>Reproduce, duplicate, reverse-engineer, or copy proprietary calculation algorithms.</li>
+                                <li>Redistribute content from EduGPA.online without express written permission.</li>
+                            </ul>
+                        </div>
 
-                            <div id="intro" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-600 shadow-sm border border-white/50">
-                                        <FileText className="w-6 h-6" />
-                                    </div>
-                                    01. Introduction
-                                </h2>
-                                <p>
-                                    Welcome to EduGPA.online. These terms and conditions outline the rules and regulations for the use of EduGPA.online&apos;s Website.
-                                </p>
-                                <p>
-                                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person log on this website and compliant to the Company&apos;s terms and conditions.
-                                </p>
-                            </div>
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <BookOpen className="w-5 h-5 text-slate-400" />
+                                3. Acceptable Use Policy
+                            </h2>
+                            <p>
+                                You agree to use the EduGPA platform solely for lawful educational and academic tracking purposes. You agree not to take any action that might compromise the security of the site, render the site inaccessible to others, or otherwise cause damage to the site or its content.
+                            </p>
+                            <p>
+                                Automated scraping, data mining, or the use of automated testing frameworks (bots) against our calculation endpoints without prior authorization is strictly prohibited and may result in permanent IP blocking and legal action.
+                            </p>
+                        </div>
 
-                            <div id="cookies" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-indigo-600/10 flex items-center justify-center text-indigo-600 shadow-sm border border-white/50">
-                                        <AlertCircle className="w-6 h-6" />
-                                    </div>
-                                    02. Cookies
-                                </h2>
-                                <p>
-                                    We employ the use of cookies. By accessing EduGPA.online, you agreed to use cookies in agreement with the EduGPA.online&apos;s Privacy Policy. Most interactive websites use cookies to let us retrieve the user&apos;s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
-                                </p>
-                            </div>
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Scale className="w-5 h-5 text-slate-400" />
+                                4. Limitation of Liability & iFrames
+                            </h2>
+                            <p>
+                                We shall not be held responsible for any content that appears on your Website if you link to us. You agree to protect and defend us against all claims that arise on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene, or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of any third-party rights.
+                            </p>
+                            <p>
+                                Without prior approval and written permission, you may not create frames (iFrames) around our Webpages that alter in any way the visual presentation or appearance of our Website.
+                            </p>
+                            <p>
+                                In no event shall EduGPA.online, nor any of its officers, directors, and employees, be held liable for anything arising out of or in any way connected with your use of this Website. EduGPA.online shall not be held liable for any indirect, consequential, or special liability arising out of your use of this Website, including scholarship rejections, university admission denials, or academic probation stemming from reliance on estimated calculations.
+                            </p>
+                        </div>
 
-                            <div id="license" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-orange-600/10 flex items-center justify-center text-orange-600 shadow-sm border border-white/50">
-                                        <BookOpen className="w-6 h-6" />
-                                    </div>
-                                    03. License & IP
-                                </h2>
-                                <p>
-                                    Unless otherwise stated, EduGPA.online and/or its licensors own the intellectual property rights for all material on EduGPA.online. All intellectual property rights are reserved. You may access this from EduGPA.online for your own personal use subjected to restrictions set in these terms and conditions.
-                                </p>
-                                <ul className="list-disc pl-6 space-y-2">
-                                    <li>Republish material from EduGPA.online</li>
-                                    <li>Sell, rent or sub-license material from EduGPA.online</li>
-                                    <li>Reproduce, duplicate or copy material from EduGPA.online</li>
-                                    <li>Redistribute content from EduGPA.online</li>
-                                </ul>
-                            </div>
-
-                            <div id="hyperlinking" className="space-y-6">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 flex items-center gap-4 m-0 uppercase tracking-tighter italic">
-                                    <div className="w-12 h-12 rounded-2xl bg-emerald-600/10 flex items-center justify-center text-emerald-600 shadow-sm border border-white/50">
-                                        <Scale className="w-6 h-6" />
-                                    </div>
-                                    04. Liability & Links
-                                </h2>
-                                <p className="font-bold">iFrame and Content Liability</p>
-                                <p>
-                                    Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website. We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website.
-                                </p>
-                                <p className="font-bold">Reservation of Rights</p>
-                                <p>
-                                    We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request.
-                                </p>
-                            </div>
-
-                            <div id="updates" className="space-y-6">
-                                <h2 className="text-3xl font-black text-slate-900 m-0 uppercase tracking-tight italic">05. Updates</h2>
-                                <p>
-                                    We reserve the right to amend these terms and conditions and it&apos;s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
-                                </p>
-                                <div className="p-6 rounded-2xl bg-slate-900 text-white inline-block font-black uppercase text-[10px] tracking-widest shadow-xl">
-                                    Last Revised: August 2026
-                                </div>
-                            </div>
-
-                            <div className="pt-20 border-t border-white/40">
-                                <Link href="/contact" className="text-blue-600 font-black text-xl italic flex items-center gap-4 hover:gap-8 transition-all group uppercase tracking-widest leading-none">
-                                    Contact Us For Questions
-                                    <ChevronRight className="w-8 h-8 group-hover:scale-150 transition-transform" />
-                                </Link>
-                            </div>
+                        <div className="pt-12 mt-12 border-t border-slate-200">
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                                Legal Inquiries Contact
+                                <ChevronRight className="w-4 h-4" />
+                            </Link>
                         </div>
                     </div>
                 </div>

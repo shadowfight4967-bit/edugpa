@@ -1,35 +1,32 @@
 import Link from "next/link";
-import { Mail, MapPin, Clock, Twitter, Facebook, Instagram, Github, ChevronRight } from "lucide-react";
+import { Mail, MapPin, Clock, Twitter, Facebook, Instagram, Github, ChevronRight, GraduationCap } from "lucide-react";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-slate-900 pt-20 pb-10 overflow-hidden relative border-t border-slate-800">
-            {/* Decorative gradient */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
-
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <footer className="bg-[#09090b] pt-20 pb-10 border-t border-slate-800">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2 group">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
-                                <span className="text-white font-bold text-lg italic">E</span>
+                            <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center transition-transform group-hover:scale-105">
+                                <GraduationCap className="text-[#09090b] w-5 h-5" />
                             </div>
-                            <span className="font-bold text-2xl text-white tracking-tight">
-                                Edu<span className="text-blue-400">GPA</span>
+                            <span className="font-bold text-xl text-white tracking-tight">
+                                EduGPA
                             </span>
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-                            Empowering students worldwide with precise GPA conversion, tracking tools, and expert academic guides. Your success, simplified.
+                            Empowering students worldwide with precise GPA conversion, tracking tools, and expert academic guides.
                         </p>
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-4">
                             {[Twitter, Facebook, Instagram, Github].map((Icon, i) => (
                                 <a
                                     key={i}
                                     href="#"
-                                    className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 transition-all shadow-sm"
+                                    className="text-slate-500 hover:text-white transition-colors"
                                 >
                                     <Icon className="w-5 h-5" />
                                 </a>
@@ -39,15 +36,14 @@ export default function Footer() {
 
                     {/* Pages Column */}
                     <div>
-                        <h3 className="text-white font-bold mb-6 text-lg">Platform</h3>
-                        <ul className="space-y-4">
-                            {["Home", "Guides", "About", "Contact", "Privacy Policy"].map((item) => (
+                        <h3 className="text-white font-medium mb-6 text-sm uppercase tracking-wider">Platform</h3>
+                        <ul className="space-y-3">
+                            {["Home", "Guides", "About", "Contact"].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
-                                        className="text-slate-400 hover:text-white text-sm flex items-center gap-2 group transition-colors"
+                                        className="text-slate-400 hover:text-white text-sm transition-colors"
                                     >
-                                        <ChevronRight className="w-3 h-3 text-slate-600 group-hover:text-blue-400" />
                                         {item}
                                     </Link>
                                 </li>
@@ -57,8 +53,8 @@ export default function Footer() {
 
                     {/* Tools Column */}
                     <div>
-                        <h3 className="text-white font-bold mb-6 text-lg">Academic Tools</h3>
-                        <ul className="space-y-4">
+                        <h3 className="text-white font-medium mb-6 text-sm uppercase tracking-wider">Academic Tools</h3>
+                        <ul className="space-y-3">
                             {[
                                 { name: "GPA to Percentage", url: "/guides/percentage-to-cgpa-conversion" },
                                 { name: "SGPA Tracker", url: "/guides/how-to-track-sgpa-each-semester" },
@@ -66,9 +62,8 @@ export default function Footer() {
                                 <li key={tool.name}>
                                     <a
                                         href={tool.url}
-                                        className="text-slate-400 hover:text-blue-400 text-sm flex items-center gap-2 group transition-colors"
+                                        className="text-slate-400 hover:text-white text-sm transition-colors"
                                     >
-                                        <ChevronRight className="w-3 h-3 text-slate-600 group-hover:text-blue-400" />
                                         {tool.name}
                                     </a>
                                 </li>
@@ -78,18 +73,16 @@ export default function Footer() {
 
                     {/* Contact Column */}
                     <div>
-                        <h3 className="text-white font-bold mb-6 text-lg">Get in Touch</h3>
-                        <ul className="space-y-5">
+                        <h3 className="text-white font-medium mb-6 text-sm uppercase tracking-wider">Contact</h3>
+                        <ul className="space-y-4">
                             {[
                                 { Icon: Mail, text: "edugpa8@gmail.com" },
                                 { Icon: MapPin, text: "Global Student Support" },
                                 { Icon: Clock, text: "Mon - Fri, 9am - 6pm" },
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center shrink-0">
-                                        <item.Icon className="w-5 h-5 text-blue-400" />
-                                    </div>
-                                    <span className="text-slate-400 text-sm pt-2">{item.text}</span>
+                                <li key={i} className="flex items-center gap-3">
+                                    <item.Icon className="w-4 h-4 text-slate-500" />
+                                    <span className="text-slate-400 text-sm">{item.text}</span>
                                 </li>
                             ))}
                         </ul>
@@ -97,32 +90,23 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-10 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-6">
-                    <p className="text-slate-500 text-xs">
-                        © {currentYear} EduGPA.online. All academic rights reserved.
+                <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p className="text-slate-500 text-sm">
+                        © {currentYear} EduGPA.online. All rights reserved.
                     </p>
                     <div className="flex flex-wrap gap-4 md:gap-8 justify-center mt-4 md:mt-0">
-                        <Link href="/privacy-policy" className="text-slate-500 hover:text-white text-xs transition-colors">
+                        <Link href="/privacy-policy" className="text-slate-500 hover:text-white text-sm transition-colors">
                             Privacy
                         </Link>
-                        <Link href="/terms-and-conditions" className="text-slate-500 hover:text-white text-xs transition-colors">
+                        <Link href="/terms-and-conditions" className="text-slate-500 hover:text-white text-sm transition-colors">
                             Terms
                         </Link>
-                        <Link href="/disclaimer" className="text-slate-500 hover:text-white text-xs transition-colors">
+                        <Link href="/disclaimer" className="text-slate-500 hover:text-white text-sm transition-colors">
                             Disclaimer
-                        </Link>
-                        <Link href="/contact" className="text-slate-500 hover:text-white text-xs transition-colors">
-                            Support
-                        </Link>
-                        <Link href="/about" className="text-slate-500 hover:text-white text-xs transition-colors">
-                            Our Story
                         </Link>
                     </div>
                 </div>
             </div>
-
-            {/* Background glow */}
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 blur-[120px] rounded-full -ml-64 -mb-64 pointer-events-none" />
         </footer>
     );
 }
