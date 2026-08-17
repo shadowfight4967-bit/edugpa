@@ -14,8 +14,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} — Understand GPA, SGPA & CGPA Easily`,
-    template: `%s | ${SITE_NAME}`,
+    default: `EduGPA`,
+    template: `%s`,
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
