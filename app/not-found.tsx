@@ -4,7 +4,6 @@ import { Home, ArrowLeft, Search, AlertCircle } from "lucide-react";
 export default function NotFound() {
     return (
         <div className="min-h-[80vh] flex items-center justify-center px-4 relative overflow-hidden bg-slate-50">
-            {/* Background Mesh */}
             <div className="absolute inset-0 bg-gradient-mesh pointer-events-none opacity-30" />
 
             <div className="max-w-md w-full text-center relative z-10">
