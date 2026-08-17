@@ -101,9 +101,15 @@ export default function Footer() {
                     <p className="text-slate-500 text-xs">
                         © {currentYear} EduGPA.online. All academic rights reserved.
                     </p>
-                    <div className="flex gap-8">
+                    <div className="flex flex-wrap gap-4 md:gap-8 justify-center mt-4 md:mt-0">
                         <Link href="/privacy-policy" className="text-slate-500 hover:text-white text-xs transition-colors">
                             Privacy
+                        </Link>
+                        <Link href="/terms-and-conditions" className="text-slate-500 hover:text-white text-xs transition-colors">
+                            Terms
+                        </Link>
+                        <Link href="/disclaimer" className="text-slate-500 hover:text-white text-xs transition-colors">
+                            Disclaimer
                         </Link>
                         <Link href="/contact" className="text-slate-500 hover:text-white text-xs transition-colors">
                             Support
