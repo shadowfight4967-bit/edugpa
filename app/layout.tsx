@@ -107,8 +107,7 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
       </head>
       <body className={`${inter.variable} antialiased selection:bg-blue-100 selection:text-blue-600 text-slate-900 min-h-screen`}>
-        {/* Fixed gradient background layer */}
-        <div className="fixed inset-0 -z-10" style={{ background: 'linear-gradient(135deg, #c7d2fe 0%, #fde68a 45%, #93c5fd 100%)' }} />
+
         <Header />
         <main>{children}</main>
         <Footer />

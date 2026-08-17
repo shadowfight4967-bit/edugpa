@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Calculator, GraduationCap, ChevronRight } from "lucide-react";
+import { Menu, X, GraduationCap } from "lucide-react";
 
 const NAV_LINKS = [
     { label: "Home", href: "/" },
@@ -22,60 +22,57 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`sticky top-0 z-50 transition-all duration-500 border-b ${scrolled ? "bg-white border-slate-200 shadow-sm" : "bg-transparent border-transparent"
+        <header className={`sticky top-0 z-50 transition-all duration-300 border-b ${scrolled ? "bg-white/80 backdrop-blur-md border-slate-200 shadow-sm" : "bg-transparent border-transparent"
             }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
-                            <GraduationCap className="text-white w-6 h-6" />
+                    <Link href="/" className="flex items-center gap-2 transition-transform hover:opacity-80">
+                        <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center">
+                            <GraduationCap className="text-white w-5 h-5" />
                         </div>
-                        <span className="font-bold text-2xl tracking-tight text-slate-900">
-                            Edu<span className="gradient-text">GPA</span>
+                        <span className="font-bold text-xl tracking-tight text-slate-900">
+                            EduGPA
                         </span>
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-2">
+                    <nav className="hidden md:flex items-center gap-1">
                         {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="px-5 py-2.5 rounded-full text-sm font-semibold text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all"
+                                className="px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
                             >
                                 {link.label}
                             </Link>
                         ))}
-                        <div className="w-px h-6 bg-slate-200 mx-4" />
-                       
                     </nav>
 
                     {/* Mobile hamburger */}
                     <button
-                        className="md:hidden p-2.5 rounded-xl text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all"
+                        className="md:hidden p-2 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                     </button>
                 </div>
             </div>
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full animate-fade-in bg-white border-b border-slate-200 px-4 py-6 shadow-2xl">
-                    <nav className="flex flex-col gap-2">
+                <div className="md:hidden absolute top-full left-0 w-full animate-fade-in bg-white border-b border-slate-200 px-4 py-4 shadow-xl">
+                    <nav className="flex flex-col gap-1">
                         {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="px-4 py-4 rounded-2xl text-lg font-semibold text-slate-700 hover:text-blue-600 hover:bg-blue-50 transition-all"
+                                className="px-4 py-3 rounded-lg text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors"
                                 onClick={() => setMenuOpen(false)}
                             >
                                 {link.label}
                             </Link>
                         ))}
-                      
                     </nav>
                 </div>
             )}
