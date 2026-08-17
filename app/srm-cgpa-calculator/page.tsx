@@ -103,7 +103,7 @@ export default function SRMCGPACalculatorPage() {
             <section className="bg-white py-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     
-                    <div className="prose prose-slate prose-lg max-w-none text-slate-700 space-y-12 prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-a:text-blue-600 prose-img:rounded-xl">
+                    <div className="prose prose-slate prose-lg max-w-none text-slate-700 space-y-12 prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-h2:text-4xl md:prose-h2:text-5xl prose-h3:text-2xl md:prose-h3:text-3xl prose-a:text-blue-600 prose-img:rounded-xl">
                         
                         <div>
                             <h2>Comprehensive SRM Grade Calculation Guide</h2>
