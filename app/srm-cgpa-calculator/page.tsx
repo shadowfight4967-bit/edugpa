@@ -106,7 +106,8 @@ export default function SRMCGPACalculatorPage() {
                     <div className="prose prose-slate prose-lg max-w-none text-slate-700 space-y-12 prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-a:text-blue-600 prose-img:rounded-xl">
                         
                         <div>
-                            <h2>Understanding the SRM CGPA System</h2>
+                            <h2>Comprehensive SRM Grade Calculation Guide</h2>
+                            <h3>Understanding the SRM CGPA System</h3>
                             <p>
                                 The SRM Institute of Science and Technology (SRMIST) is renowned for its rigorous academic curriculum and robust grading system. For students striving for excellence, understanding the nuances of the <strong>SRM CGPA Calculator</strong> is not just helpful—it is absolutely essential for academic survival and success.
                             </p>
@@ -119,7 +120,7 @@ export default function SRMCGPACalculatorPage() {
                         </div>
 
                         <div>
-                            <h2>How This SRM CGPA Calculator Works</h2>
+                            <h3>How This SRM CGPA Calculator Works</h3>
                             <p>
                                 Manual CGPA calculation can be confusing, especially when different semesters possess wildly different credit totals. The traditional method of averaging your SGPAs without factoring in total semester credits leads to mathematically incorrect results. Our SRM calculator removes this guesswork and provides reliable results instantly by utilizing a rigorous weighted average algorithm.
                             </p>
@@ -137,7 +138,7 @@ export default function SRMCGPACalculatorPage() {
                         </div>
 
                         <div>
-                            <h2>Official SRM Grade Points Table</h2>
+                            <h3>Official SRM Grade Points Table</h3>
                             <p>
                                 SRM utilizes a standard 10-point grading scale. Use this grading table as a definitive reference while calculating your GPA or CGPA. It is crucial to input the exact grade points to avoid estimation errors.
                             </p>
@@ -171,7 +172,7 @@ export default function SRMCGPACalculatorPage() {
                         </div>
 
                         <div>
-                            <h2>Step-by-Step Example Calculation</h2>
+                            <h3>Step-by-Step Example Calculation</h3>
                             <p>
                                 To illustrate the power and necessity of a weighted CGPA calculator, consider a student transitioning into their sophomore year. Below is a hypothetical representation of their first three semesters:
                             </p>
@@ -202,7 +203,8 @@ export default function SRMCGPACalculatorPage() {
                         </div>
 
                         <div>
-                            <h2>Why Students Prefer Online CGPA Calculators</h2>
+                            <h2>Importance of CGPA at SRM University</h2>
+                            <h3>Why Students Prefer Online CGPA Calculators</h3>
                             <p>
                                 In the fast-paced environment of SRM Institute of Science and Technology, time is of the essence. Manual CGPA calculations are prone to human error—a misplaced decimal or an incorrectly summed credit can provide a false sense of security or undue panic.
                             </p>
@@ -216,7 +218,7 @@ export default function SRMCGPACalculatorPage() {
                         </div>
 
                         <div>
-                            <h2>Is CGPA Important at SRM?</h2>
+                            <h3>Is CGPA Crucial for SRM Placements?</h3>
                             <p>
                                 Emphatically, yes. While the modern tech industry increasingly values raw skills, open-source contributions, and practical project portfolios, your CGPA remains the primary gating metric used by almost all massive corporate recruiters. 
                             </p>
