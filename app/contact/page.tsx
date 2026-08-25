@@ -40,7 +40,7 @@ export default function ContactPage() {
         {
             title: "Support Hours",
             val: "24 hours",
-            sub: "UTC-5",
+            sub: "UTC+5",
             Icon: Clock,
             color: "text-cyan-600 bg-white/50",
         },
