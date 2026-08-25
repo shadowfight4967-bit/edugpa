@@ -28,7 +28,6 @@ export default function Header() {
             }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 transition-transform hover:opacity-80">
                         <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center">
                             <GraduationCap className="text-white w-5 h-5" />
