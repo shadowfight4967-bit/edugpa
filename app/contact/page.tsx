@@ -146,34 +146,34 @@ export default function ContactPage() {
 
                         {/* Sidebar Info Cards */}
                         <div className="order-1 lg:order-2 space-y-6">
-                            <div className="bg-slate-900 rounded-3xl p-8 md:p-10 text-white relative overflow-hidden shadow-lg">
-                                <h2 className="text-2xl font-bold mb-10 relative z-10">Support Info</h2>
-                                <ul className="space-y-8 relative z-10">
+                            <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 md:p-10 relative overflow-hidden shadow-sm">
+                                <h2 className="text-2xl font-bold text-slate-900 mb-8 relative z-10">Support Info</h2>
+                                <ul className="space-y-6 sm:space-y-8 relative z-10">
                                     {contactCards.map((card, i) => (
-                                        <li key={i} className="flex items-start gap-5">
-                                            <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm ${card.color}`}>
-                                                <card.Icon className="w-6 h-6" />
+                                        <li key={i} className="flex items-start sm:items-center gap-4 sm:gap-5">
+                                            <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white border border-slate-200 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-sm text-blue-600">
+                                                <card.Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                                             </div>
-                                            <div>
-                                                <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{card.title}</p>
-                                                <p className="text-white font-semibold text-lg mb-0.5">{card.val}</p>
-                                                <p className="text-slate-500 text-sm">{card.sub}</p>
+                                            <div className="min-w-0 flex-1">
+                                                <p className="text-slate-500 text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-1">{card.title}</p>
+                                                <p className="text-slate-900 font-bold text-base sm:text-lg mb-0.5 truncate">{card.val}</p>
+                                                <p className="text-slate-500 text-xs sm:text-sm font-medium">{card.sub}</p>
                                             </div>
                                         </li>
                                     ))}
                                 </ul>
-                                {/* Background Glow */}
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px] -mr-32 -mt-32 rounded-full pointer-events-none" />
+                                {/* Decorative Element */}
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 blur-[50px] -mr-16 -mt-16 rounded-full pointer-events-none" />
                             </div>
 
                             {/* Response Time Note */}
-                            <div className="bg-blue-50/50 p-8 rounded-3xl border border-blue-100/50">
+                            <div className="bg-blue-50 p-6 sm:p-8 rounded-3xl border border-blue-100">
                                 <h3 className="text-blue-800 font-bold mb-3 flex items-center gap-2 text-base">
                                     <Clock className="w-5 h-5" />
                                     Rapid Protocol
                                 </h3>
-                                <p className="text-slate-600 font-medium text-sm leading-relaxed mb-0">
-                                    Our verified team typically responds within <strong className="text-slate-800">4 business hours</strong> for academic inquiries.
+                                <p className="text-blue-900/80 font-medium text-sm leading-relaxed mb-0">
+                                    Our verified team typically responds within <strong className="text-blue-900 font-bold">4 business hours</strong> for academic inquiries.
                                 </p>
                             </div>
                         </div>
