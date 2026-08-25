@@ -126,6 +126,26 @@ export default function AboutPage() {
                             </p>
                         </div>
 
+                        {/* Founder Section */}
+                        <div className="not-prose mt-16 mb-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center md:items-start shadow-sm relative overflow-hidden">
+                                {/* Decorative background */}
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-violet-600/5 blur-[50px] rounded-full" />
+                                
+                                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-violet-100 to-fuchsia-100 border-4 border-white shadow-lg flex-shrink-0 flex items-center justify-center relative z-10">
+                                    <span className="text-3xl md:text-5xl font-black text-violet-600">MA</span>
+                                </div>
+                                
+                                <div className="text-center md:text-left relative z-10">
+                                    <h3 className="text-2xl font-black text-slate-900 mb-1">Muhammad Amir</h3>
+                                    <p className="text-violet-600 font-bold text-sm uppercase tracking-wider mb-4">Founder & Lead Developer</p>
+                                    <p className="text-slate-600 leading-relaxed max-w-2xl">
+                                        As an active student and developer, Muhammad experienced firsthand the frustration of navigating complex, localized grading systems when applying for international opportunities. He built EduGPA to solve a critical problem: the lack of a unified, mathematically accurate tool for global grade conversion. Combining his academic insight with technical expertise, he created this platform to empower millions of students to take control of their academic trajectory without sacrificing their data privacy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="pt-8 grid sm:grid-cols-2 gap-6 not-prose">
                             {values.map((v, i) => (
                                 <div key={i} className="bento-card p-6 bg-slate-50 border-slate-200">
