@@ -232,11 +232,34 @@ export default function SRMCGPACalculatorPage() {
                         <div>
                             <h3>Is CGPA Crucial for SRM Placements?</h3>
                             <p>
-                                Emphatically, yes. While the modern tech industry increasingly values raw skills, open-source contributions, and practical project portfolios, your CGPA remains the primary gating metric used by almost all massive corporate recruiters. 
+                                Emphatically, yes. While the modern tech industry increasingly values raw skills, open-source contributions, and practical project portfolios, your CGPA remains the primary gating metric used by almost all massive corporate recruiters during campus placement drives.
                             </p>
                             <p>
-                                During mass recruitment drives, companies utilize automated filtering software to process thousands of resumes. A strong CGPA (typically above 7.5) ensures your resume survives the initial automated purge. Furthermore, a high CGPA demonstrates consistency, discipline, and a strong work ethic to prospective employers.
+                                During mass recruitment events, companies utilize automated filtering software (Applicant Tracking Systems) to process thousands of resumes. A strong CGPA (typically above 7.5, and often strictly above 8.0 for premium roles) ensures your resume survives the initial automated purge. 
                             </p>
+                            
+                            <h4>The "Super Dream" and "Dream" Offer Categories</h4>
+                            <p>
+                                SRM categorizes placement offers into tiers. "Super Dream" offers (typically 10 LPA and above from companies like Amazon, Microsoft, and Google) almost universally enforce strict academic cutoffs. To even sit for the initial coding rounds or aptitude tests for these companies, a minimum CGPA of 8.0 with zero history of standing arrears is the standard baseline. 
+                            </p>
+                            <p>
+                                For standard "Dream" offers (5 to 9.9 LPA) or mass recruitment offers (TCS, Wipro, Cognizant), the cutoff usually sits around 7.0 or 60% equivalent. Falling below a 7.0 CGPA mathematically locks you out of a significant percentage of on-campus opportunities, regardless of your coding abilities.
+                            </p>
+
+                            <h4>Beyond the Initial Filter</h4>
+                            <p>
+                                Furthermore, a high CGPA demonstrates consistency, discipline, and a strong work ethic to prospective employers. Interviewers often use academic performance as a proxy for an applicant's ability to learn complex, sometimes tedious information and deliver results consistently over a four-year period.
+                            </p>
+                            
+                            <h3>Strategies for Maintaining a High SRM CGPA</h3>
+                            <p>
+                                Understanding how your CGPA is calculated is only half the battle; actively managing it requires strategy. The most effective approach leverages the mathematical weight of the credit system:
+                            </p>
+                            <ul>
+                                <li><strong>Prioritize High-Credit Courses:</strong> Core engineering subjects and intensive lab courses often carry 3 or 4 credits. Earning an 'O' or 'A+' in a 4-credit course has four times the positive impact on your CGPA as doing well in a 1-credit seminar. Allocate your study time proportionally to credit weight.</li>
+                                <li><strong>Protect Your First Year:</strong> The first two semesters often feature foundational courses that are less complex than third-year core subjects. Securing a 9.0+ CGPA in your first year creates a mathematical buffer. Because CGPA is cumulative, a high early score is very difficult to drag down later, just as a low early score is mathematically difficult to pull up.</li>
+                                <li><strong>Clear Arrears Immediately:</strong> A failing grade (F = 0 points) devastates a semester's SGPA. If you fail a subject, prioritize clearing it in the very next supplementary exam cycle. The new passing grade will replace the zero in your cumulative calculation, instantly repairing the damage to your overall CGPA.</li>
+                            </ul>
                         </div>
 
                         <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-16">

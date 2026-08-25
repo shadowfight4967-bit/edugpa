@@ -332,42 +332,104 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate prose-lg">
           <h2>Your Complete Academic Grade Resource</h2>
           <p>
-            <strong>Quick Answer:</strong> EduGPA.online is a free, privacy-first academic platform that helps students calculate their Cumulative Grade Point Average (CGPA), convert percentage marks to international grading scales, and access expert-written guides on academic planning. All tools run entirely in your browser — no data is ever stored.
+            <strong>Quick Answer:</strong> EduGPA.online is a free, privacy-first academic platform that helps students calculate their Cumulative Grade Point Average (CGPA), convert percentage marks to international grading scales, and access expert-written guides on academic planning. All tools run entirely in your browser — no data is ever stored on our servers.
           </p>
 
-          <h3>What is a Grade Point Average (GPA)?</h3>
+          <h3>The Critical Role of Academic Tracking</h3>
           <p>
-            A Grade Point Average is a standardized numerical representation of your academic performance. Universities around the world use different scales — the United States uses a 4.0 scale, India commonly uses a 10-point CGPA system, and European institutions follow the ECTS framework. Understanding how your grades translate across these systems is essential for international applications, scholarships, and employment.
+            In the modern educational landscape, a student's academic record is no longer just a localized metric used by their immediate professors. With the globalization of higher education and the rise of multinational corporate recruitment, your Grade Point Average (GPA) or Cumulative Grade Point Average (CGPA) acts as a universal currency. It is the primary numeric indicator used to quickly assess your competence, consistency, and capability to handle rigorous workloads.
+          </p>
+          <p>
+            However, this universal currency is complicated by the fact that different countries and institutions use vastly different scales to measure it. The United States standardizes around the 4.0 GPA scale. Many Asian countries, notably India, utilize a 10-point CGPA system. European institutions rely on the European Credit Transfer and Accumulation System (ECTS), while the United Kingdom operates on a unique degree classification framework (First Class, Upper Second, etc.).
+          </p>
+          <p>
+            For students planning to cross borders — whether applying for a Master's degree in Germany, seeking an H-1B eligible tech role in Silicon Valley, or competing for a Rhodes Scholarship at Oxford — understanding exactly how your local grades translate to international standards is not optional. It is a mandatory step in the application process.
           </p>
 
           <h3>Why Students Trust EduGPA</h3>
           <p>
-            We built EduGPA because we noticed a gap: students were making critical mathematical errors when manually calculating their cumulative averages or converting grades for foreign applications. A misplaced decimal can mean the difference between qualifying for a scholarship and missing the cutoff entirely.
+            We built EduGPA because we noticed a persistent gap in the academic tool ecosystem: students were making critical mathematical errors when manually calculating their cumulative averages or attempting to convert their grades for foreign applications. A misplaced decimal or a fundamental misunderstanding of credit-weighting can mean the difference between qualifying for an Ivy League graduate program and missing the automated application cutoff entirely.
+          </p>
+          
+          <h4>The Danger of Manual Calculation Errors</h4>
+          <p>
+            Consider a student trying to calculate their CGPA across four semesters. The most common mistake is simply adding the four semester GPAs together and dividing by four. This simple average completely ignores credit weighting. If a student scored a 3.0 in a light 12-credit semester and a 4.0 in an intense 18-credit semester, the 4.0 must mathematically carry more weight in the final calculation. 
+          </p>
+          <p>
+            Our tools eliminate this risk. We provide professional-grade academic calculators designed to handle these complex algorithms automatically:
           </p>
           <ul>
-            <li><strong>Weighted Accuracy:</strong> Our <a href="/cgpa-calculator">CGPA Calculator</a> uses the proper credit-weighted formula, not a simple average of semester GPAs.</li>
-            <li><strong>International Brackets:</strong> Our <a href="/percentage-to-gpa">Percentage to GPA Converter</a> maps your scores using region-specific brackets rather than flawed direct division.</li>
-            <li><strong>University-Specific Tools:</strong> Tools like our <a href="/srm-cgpa-calculator">SRM CGPA Calculator</a> are calibrated to match the exact grading policies of specific institutions.</li>
-            <li><strong>Expert Guides:</strong> Every article in our <a href="/guides">resource library</a> is written following E-E-A-T principles — demonstrating real experience, expertise, and trustworthiness.</li>
+            <li><strong>Weighted Accuracy:</strong> Our <a href="/cgpa-calculator">CGPA Calculator</a> uses the proper credit-weighted formula. It ensures that every course impacts your final score precisely in proportion to its credit value.</li>
+            <li><strong>International Brackets:</strong> Our <a href="/percentage-to-gpa">Percentage to GPA Converter</a> maps your scores using region-specific brackets rather than flawed direct division. (Dividing a 60% by 25 gives you a 2.4 US GPA, which is wildly inaccurate for systems where 60% is a First-Class grade).</li>
+            <li><strong>University-Specific Tools:</strong> Tools like our <a href="/srm-cgpa-calculator">SRM CGPA Calculator</a> are precisely calibrated to match the exact, official grading policies of specific prominent institutions, ensuring zero discrepancy between your calculation and your official transcript.</li>
           </ul>
 
-          <h3>How to Get Started</h3>
+          <h3>The Philosophy Behind Our Content</h3>
           <p>
-            If you know your semester GPAs and credit hours, head directly to the <a href="/cgpa-calculator">CGPA Calculator</a> to aggregate your cumulative score. If your university provides percentage marks instead of grade points, start with the <a href="/percentage-to-gpa">Percentage to GPA Converter</a> to translate your scores first.
+            Beyond tools, EduGPA serves as a comprehensive knowledge base for academic strategy. The internet is flooded with generic, surface-level advice about studying harder. We take a different approach. Every article in our <a href="/guides">resource library</a> is written following strict E-E-A-T principles — demonstrating real Experience, Expertise, Authoritativeness, and Trustworthiness.
           </p>
           <p>
-            For deeper academic strategies — such as how to improve a low CGPA in your final year, the difference between SGPA and CGPA, or what GPA you need for a Master&apos;s degree abroad — browse our comprehensive <a href="/guides">student guides</a>.
+            Our guides dive into the actual mathematics and strategies of academic success. We explain the exact mathematical formulas required to execute a "grade replacement strategy" in your final year. We break down the specific GPA cutoffs used by FAANG companies during campus placements. We provide country-by-country breakdowns of exactly what constitutes a "good" GPA for Master's admissions in Canada versus Germany.
+          </p>
+          <p>
+            This is not generic advice; it is tactical academic planning.
+          </p>
+
+          <h3>How to Build Your Academic Strategy with EduGPA</h3>
+          
+          <h4>Step 1: Establish Your Baseline</h4>
+          <p>
+            You cannot improve what you do not measure. If you know your semester GPAs and credit hours, your first step should be to head directly to the <a href="/cgpa-calculator">CGPA Calculator</a>. Input all your historical data to aggregate your exact cumulative score as it stands today. Do not guess your CGPA — know it.
+          </p>
+          
+          <h4>Step 2: Understand Your International Standing</h4>
+          <p>
+            If your university provides percentage marks instead of grade points (or if you are on a 10-point scale but plan to apply to US institutions), you must translate your scores. Use the <a href="/percentage-to-gpa">Percentage to GPA Converter</a> to see how your current academic performance is viewed through the lens of a North American admissions officer.
+          </p>
+          
+          <h4>Step 3: Forecast and Target</h4>
+          <p>
+            Once you know your baseline, use the calculators to model "what-if" scenarios. If you are a junior with a 3.2 CGPA and you need a 3.5 for a specific scholarship, input dummy data for your upcoming senior year semesters. Play with the numbers until you find the exact semester GPAs you need to achieve your goal. This transforms a vague desire to "do better" into a concrete, numerical target for the upcoming term.
+          </p>
+
+          <h4>Step 4: Execute with Strategy</h4>
+          <p>
+            With your targets set, browse our <a href="/guides">student guides</a> to find the tactical advice necessary to hit those numbers. Whether you need to learn <a href="/guides/how-to-improve-cgpa-in-final-year">how to improve a low CGPA in your final year</a>, understand the subtle <a href="/guides/gpa-vs-sgpa-vs-cgpa-explained">difference between SGPA and CGPA</a>, or diagnose why your <a href="/guides/how-to-track-sgpa-each-semester">semester GPA suddenly dropped</a>, our library provides the strategic roadmap.
+          </p>
+
+          <h3>Our Commitment to Student Privacy</h3>
+          <p>
+            In an era where personal data is aggressively monetized, we take a definitive stance on student privacy. Your grades are highly personal and sensitive information. 
+          </p>
+          <p>
+            <strong>EduGPA operates on a strict zero-data-retention policy.</strong>
+          </p>
+          <p>
+            When you enter your grades into any calculator on this platform, the mathematical processing happens entirely locally within your own web browser using client-side JavaScript. 
+            We do not have servers that ingest your grades. We do not store your academic records in a database. We do not require you to create an account or provide an email address to access our tools. The moment you close your browser tab, your data vanishes. You get professional-grade calculations with absolute privacy.
           </p>
 
           <h3>Frequently Asked Questions</h3>
-          <h4>Is EduGPA completely free?</h4>
-          <p>Yes. Every calculator and guide on this platform is 100% free to use. There are no paywalls, no premium tiers, and no hidden fees.</p>
+          
+          <h4>Is EduGPA completely free to use?</h4>
+          <p>
+            Yes, absolutely. Every calculator, conversion tool, and strategic guide on this platform is 100% free for all students globally. There are no paywalls, no premium membership tiers, and no hidden features locked behind a subscription. We believe accurate academic tracking should be accessible to everyone.
+          </p>
 
-          <h4>Do you store my grades or personal information?</h4>
-          <p>No. All calculations happen directly in your browser using client-side JavaScript. Your academic data never leaves your device. We have no servers that store student grades.</p>
+          <h4>Can I use these calculations for official university applications?</h4>
+          <p>
+            The calculations provided by EduGPA are mathematically accurate based on the inputs you provide and standard global conversion algorithms. However, they are <em>unofficial</em> estimates. When formally applying to international universities, you will almost always be required to submit your original transcripts to a certified credential evaluation agency (such as WES, ECE, or specific university admissions departments). Our tools are designed for personal tracking, goal setting, resume building, and initial application shortlisting — not to replace official university documentation.
+          </p>
 
-          <h4>Which grading systems do you support?</h4>
-          <p>We currently support the US 4.0 scale, the 10-point CGPA scale (common in India and parts of Asia), the UK degree classification system, and the European ECTS framework. Our percentage converter handles all major international brackets.</p>
+          <h4>Which global grading systems do your tools support?</h4>
+          <p>
+            Our calculators and converters are designed to handle the most prevalent global grading frameworks. This includes the standard US 4.0 scale, the 10-point CGPA scale (widely used in India by CBSE, AICTE-approved engineering colleges, and universities across South Asia), the UK degree classification system (First Class, 2:1, 2:2), and the European ECTS framework. Our percentage converter is programmed to handle major international bracket translations accurately.
+          </p>
+
+          <h4>How often should I check my CGPA?</h4>
+          <p>
+            We recommend updating your calculations at least twice per semester: once at the beginning (using estimated grades to set your targets for the term), and once immediately after final grades are released to establish your new baseline. Frequent tracking prevents "senior year surprises" where students realize too late that they cannot mathematically reach the GPA required for their post-graduation goals.
+          </p>
         </div>
       </section>
     </>
