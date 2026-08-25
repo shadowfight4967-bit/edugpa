@@ -29,7 +29,6 @@ export default function Footer() {
                         </p>
                         <div className="flex items-center gap-4">
                             {[
-                                { Icon: Twitter, url: "#" },
                                 { Icon: Pinterest, url: "https://www.pinterest.com/EdugpA7/" },
                                 { Icon: Github, url: "https://github.com/edugpa8-wq" },
                                 { Icon: Instagram, url: "https://www.instagram.com/edugpa/" }
