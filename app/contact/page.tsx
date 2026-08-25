@@ -51,82 +51,82 @@ export default function ContactPage() {
             <JsonLd data={contactSchema} />
 
             {/* Hero Header */}
-            <section className="pt-24 pb-20 relative overflow-hidden">
+            <section className="pt-24 pb-20 relative overflow-hidden bg-slate-50 border-b border-slate-200">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <div className="inline-flex items-center gap-2 bg-white/40 backdrop-blur-md text-blue-700 px-5 py-2.5 rounded-full text-xs font-black mb-8 animate-fade-in shadow-xl shadow-blue-500/10 border border-white/50">
+                    <div className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-1.5 rounded-full text-xs font-semibold mb-8 shadow-sm border border-slate-200 uppercase tracking-wider">
                         <MessageSquare className="w-4 h-4" />
                         Direct Support Line
                     </div>
-                    <h1 className="text-5xl md:text-8xl font-black text-slate-900 mb-10 animate-fade-in-up tracking-tighter leading-tight uppercase italic">
-                        Get in <br /> <span className="gradient-text">Touch</span>.
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
+                        Get in Touch
                     </h1>
-                    <p className="text-xl md:text-2xl text-slate-600 leading-relaxed animate-fade-in-up animation-delay-100 max-w-2xl mx-auto font-medium">
-                        Whether you have a suggestion for a new conversion guide or need help with our tools, our team is ready to assist.
+                    <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-medium">
+                        Whether you have a suggestion for a new conversion guide or need help with our tools, our team is ready to assist you.
                     </p>
                 </div>
             </section>
 
-            {/* Main Grid with Glass Cards */}
-            <section className="section bg-transparent pt-0">
+            {/* Main Grid with Cards */}
+            <section className="section bg-white pt-20 pb-32">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-3 gap-10">
+                    <div className="grid lg:grid-cols-3 gap-12">
 
-                        {/* Contact Form Glass Card */}
+                        {/* Contact Form Card */}
                         <div className="lg:col-span-2 order-2 lg:order-1">
-                            <div className="card-glass p-6 sm:p-8 md:p-14 shadow-2xl border-white/60">
-                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-8 md:mb-10 flex items-center gap-4 uppercase tracking-tight">
-                                    Send Message
-                                    <Send className="w-8 h-8 text-blue-600 hidden sm:block" />
+                            <div className="bg-white p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 rounded-3xl">
+                                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-10 flex items-center gap-3">
+                                    Send a Message
+                                    <Send className="w-6 h-6 text-blue-600 hidden sm:block" />
                                 </h2>
 
-                                <form className="space-y-6 md:space-y-8">
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
-                                        <div className="space-y-2 md:space-y-3">
-                                            <label htmlFor="name" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Full Name</label>
+                                <form className="space-y-8">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                                        <div className="space-y-2">
+                                            <label htmlFor="name" className="block text-sm font-semibold text-slate-700">Full Name</label>
                                             <input
                                                 type="text"
                                                 id="name"
-                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-base md:text-lg"
+                                                className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
                                                 placeholder="e.g. Saad bin Ahmed"
                                             />
                                         </div>
-                                        <div className="space-y-2 md:space-y-3">
-                                            <label htmlFor="email" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">University Email</label>
+                                        <div className="space-y-2">
+                                            <label htmlFor="email" className="block text-sm font-semibold text-slate-700">University Email</label>
                                             <input
                                                 type="email"
                                                 id="email"
-                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-base md:text-lg"
+                                                className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
                                                 placeholder="e.g. name@university.edu"
                                             />
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2 md:space-y-3">
-                                        <label htmlFor="subject" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Reason for Contact</label>
+                                    <div className="space-y-2">
+                                        <label htmlFor="subject" className="block text-sm font-semibold text-slate-700">Reason for Contact</label>
                                         <div className="relative">
-                                            <select id="subject" className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all appearance-none font-bold text-base md:text-lg">
+                                            <select id="subject" className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all appearance-none text-base">
                                                 <option>General Feedback</option>
                                                 <option>GPA Formula Query</option>
                                                 <option>Guide Request</option>
                                                 <option>Bug Report</option>
                                             </select>
-                                            <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
-                                                <ChevronRight className="w-5 h-5 md:w-6 md:h-6 rotate-90" />
+                                            <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                                <ChevronRight className="w-5 h-5 rotate-90" />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2 md:space-y-3">
-                                        <label htmlFor="message" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Your Message</label>
+                                    <div className="space-y-2">
+                                        <label htmlFor="message" className="block text-sm font-semibold text-slate-700">Your Message</label>
                                         <textarea
                                             id="message"
                                             rows={5}
-                                            className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all resize-none font-bold text-base md:text-lg"
+                                            className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all resize-none text-base"
                                             placeholder="How can we assist you today?"
                                         ></textarea>
                                     </div>
 
-                                    <div className="flex items-start sm:items-center gap-3 md:gap-4 text-emerald-700 bg-emerald-50 px-5 py-4 rounded-2xl font-bold text-xs sm:text-sm border border-emerald-100">
+                                    <div className="flex items-start sm:items-center gap-3 text-emerald-700 bg-emerald-50 px-5 py-4 rounded-xl text-sm font-medium border border-emerald-100">
                                         <ShieldCheck className="w-5 h-5 shrink-0 mt-0.5 sm:mt-0" />
                                         Your information is protected by industry-standard encryption.
                                     </div>
@@ -136,44 +136,44 @@ export default function ContactPage() {
                                         <input type="checkbox" name="contact_me_by_fax_only" tabIndex={-1} autoComplete="off" />
                                     </div>
 
-                                    <button type="submit" className="btn-primary w-full py-5 md:py-6 text-lg md:text-xl font-black shadow-2xl shadow-blue-500/30 group flex justify-center items-center gap-2">
-                                        Send Application Message
-                                        <ArrowRight className="w-6 h-6 md:w-7 md:h-7 group-hover:translate-x-2 md:group-hover:translate-x-3 transition-transform" />
+                                    <button type="submit" className="btn-primary w-full py-5 text-lg font-bold shadow-md shadow-blue-600/10 group flex justify-center items-center gap-2 rounded-xl">
+                                        Send Message
+                                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                 </form>
                             </div>
                         </div>
 
                         {/* Sidebar Info Cards */}
-                        <div className="order-1 lg:order-2 space-y-8">
-                            <div className="bg-slate-900 rounded-[2.5rem] p-10 md:p-14 text-white relative overflow-hidden shadow-2xl">
-                                <h2 className="text-3xl font-black mb-12 relative z-10 uppercase tracking-tight">Support Info</h2>
-                                <ul className="space-y-10 relative z-10">
+                        <div className="order-1 lg:order-2 space-y-6">
+                            <div className="bg-slate-900 rounded-3xl p-8 md:p-10 text-white relative overflow-hidden shadow-lg">
+                                <h2 className="text-2xl font-bold mb-10 relative z-10">Support Info</h2>
+                                <ul className="space-y-8 relative z-10">
                                     {contactCards.map((card, i) => (
-                                        <li key={i} className="flex items-start gap-6">
-                                            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg ${card.color}`}>
-                                                <card.Icon className="w-7 h-7" />
+                                        <li key={i} className="flex items-start gap-5">
+                                            <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm ${card.color}`}>
+                                                <card.Icon className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <p className="text-blue-400 text-[10px] font-black uppercase tracking-widest mb-2">{card.title}</p>
-                                                <p className="text-white font-black text-xl mb-1 tracking-tight">{card.val}</p>
-                                                <p className="text-slate-500 text-xs font-bold">{card.sub}</p>
+                                                <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{card.title}</p>
+                                                <p className="text-white font-semibold text-lg mb-0.5">{card.val}</p>
+                                                <p className="text-slate-500 text-sm">{card.sub}</p>
                                             </div>
                                         </li>
                                     ))}
                                 </ul>
                                 {/* Background Glow */}
-                                <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/20 blur-[100px] -mr-40 -mt-40 rounded-full" />
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px] -mr-32 -mt-32 rounded-full pointer-events-none" />
                             </div>
 
-                            {/* Response Time Glass Note */}
-                            <div className="card-glass p-10 border-blue-200/40">
-                                <h3 className="text-blue-900 font-black mb-6 flex items-center gap-3 uppercase text-lg italic">
-                                    <Clock className="w-6 h-6" />
+                            {/* Response Time Note */}
+                            <div className="bg-blue-50/50 p-8 rounded-3xl border border-blue-100/50">
+                                <h3 className="text-blue-800 font-bold mb-3 flex items-center gap-2 text-base">
+                                    <Clock className="w-5 h-5" />
                                     Rapid Protocol
                                 </h3>
-                                <p className="text-slate-600 font-bold text-sm leading-relaxed mb-0">
-                                    Our verified team typically responds within **4 business hours** for academic inquiries.
+                                <p className="text-slate-600 font-medium text-sm leading-relaxed mb-0">
+                                    Our verified team typically responds within <strong className="text-slate-800">4 business hours</strong> for academic inquiries.
                                 </p>
                             </div>
                         </div>
