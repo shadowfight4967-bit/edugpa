@@ -92,7 +92,46 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-04-14",
         category: "Academic Success",
         readTime: "7 min read",
+    {
+        slug: "how-to-calculate-gpa-in-usa",
+        title: "How to Calculate GPA in the USA: A Complete Guide",
+        excerpt: "Learn how the US 4.0 GPA scale works, how to calculate your GPA, and how international students can convert their grades to the US system.",
+        date: "2026-05-01",
+        category: "Global Education",
+        readTime: "8 min read",
     },
+    {
+        slug: "understanding-european-ects-grading-system",
+        title: "Understanding the European ECTS Grading System",
+        excerpt: "What is the ECTS grading scale? Learn how European universities grade students and how ECTS credits transfer globally.",
+        date: "2026-05-02",
+        category: "Global Education",
+        readTime: "7 min read",
+    },
+    {
+        slug: "what-is-a-good-cgpa-for-masters-abroad",
+        title: "What is a Good CGPA for a Master's Abroad?",
+        excerpt: "Find out what CGPA you need to get accepted into Master's programs in the US, UK, Canada, and Europe.",
+        date: "2026-05-03",
+        category: "Career Development",
+        readTime: "9 min read",
+    },
+    {
+        slug: "difference-between-gpa-and-grades-percentage",
+        title: "The Difference Between GPA, Grades, and Percentage",
+        excerpt: "Understand the key differences between GPA, letter grades, and percentages, and how they impact your academic profile.",
+        date: "2026-05-04",
+        category: "GPA Basics",
+        readTime: "6 min read",
+    },
+    {
+        slug: "how-to-improve-cgpa-in-final-year",
+        title: "Can I Improve My CGPA in the Final Year?",
+        excerpt: "Is it too late to raise your CGPA in your senior year? Discover mathematical strategies and practical tips to maximize your final year grades.",
+        date: "2026-05-05",
+        category: "Academic Success",
+        readTime: "7 min read",
+    }
 ];
 
 export function getAllSlugs(): string[] {

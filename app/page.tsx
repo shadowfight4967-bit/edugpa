@@ -92,7 +92,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-in-up animation-delay-200">
-              <Link href="/blog" className="btn-primary w-full sm:w-auto text-base bg-white text-blue-900 hover:bg-blue-50 border-none shadow-xl">
+              <Link href="/cgpa-calculator" className="btn-primary w-full sm:w-auto text-base bg-white text-blue-900 hover:bg-blue-50 border-none shadow-xl">
                 <Calculator className="w-4 h-4" />
                 CGPA Calculator
               </Link>
@@ -221,25 +221,25 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center mb-8">
                     <Calculator className="w-7 h-7" />
                 </div>
-                <h3 className="font-black text-3xl mb-4">CGPA Hub</h3>
+                <h3 className="font-black text-3xl mb-4">CGPA Calculator</h3>
                 <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-md">
-                The absolute gold standard for GPA tracking in 2026. Save, predict, and share instantly.
+                The absolute gold standard for GPA tracking. Free, fast, and completely private. Calculate your cumulative average in seconds.
                 </p>
               </div>
-              <a href="https://cgpahub.com" target="_blank" rel="noopener noreferrer" className="btn-secondary self-start border-none">
-                Visit CGPA Hub
-                <ExternalLink className="w-4 h-4" />
-              </a>
+              <Link href="/cgpa-calculator" className="btn-secondary self-start border-none">
+                Open Calculator
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
 
             {/* Other tools */}
             <div className="flex flex-col gap-6">
                 <Link
-                    href="/srm-cgpa-calculator"
+                    href="/percentage-to-gpa"
                     className="bento-card p-6 flex-1 flex flex-col justify-center group hover:bg-slate-50 transition-colors"
                 >
-                    <h3 className="font-bold text-slate-900 text-xl mb-2">SRM Calculator</h3>
-                    <p className="text-slate-500 text-sm mb-4">Official 10-point scale CGPA calculator for SRM students.</p>
+                    <h3 className="font-bold text-slate-900 text-xl mb-2">Percentage to GPA</h3>
+                    <p className="text-slate-500 text-sm mb-4">Instantly convert your percentage to a standard 4.0 or 10.0 scale.</p>
                     <span className="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                         Open Tool <ArrowRight className="w-4 h-4" />
                     </span>

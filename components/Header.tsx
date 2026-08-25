@@ -6,6 +6,8 @@ import { Menu, X, GraduationCap } from "lucide-react";
 
 const NAV_LINKS = [
     { label: "Home", href: "/" },
+    { label: "CGPA Calculator", href: "/cgpa-calculator" },
+    { label: "Percentage to GPA", href: "/percentage-to-gpa" },
     { label: "Guides", href: "/guides" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
