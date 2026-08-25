@@ -126,6 +126,33 @@ export default function Disclaimer() {
                             </p>
                         </div>
 
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Info className="w-5 h-5 text-slate-400" />
+                                4. Frequently Asked Questions
+                            </h2>
+                            <div className="space-y-6">
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Are your calculator results officially certified?</h3>
+                                    <p>
+                                        No. Our calculators provide highly accurate mathematical estimates based on the data you input. They are designed for personal academic planning and self-assessment. For official academic documentation — such as transcripts required for graduate school admissions or credential evaluations — you must contact your university registrar or a certified evaluation service like WES (World Education Services).
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Why might my calculated CGPA differ from my university portal?</h3>
+                                    <p>
+                                        Universities occasionally apply internal policies that affect GPA calculations in ways that are not publicly documented. These include grade forgiveness programs (where a retaken course replaces the original grade), rounding conventions, and the exclusion of specific course types (such as pass/fail courses or transfer credits). Our calculator uses standard weighted-average mathematics and cannot account for institution-specific policies.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Can I rely on the percentage-to-GPA conversion for my study abroad application?</h3>
+                                    <p>
+                                        Our <a href="/percentage-to-gpa">Percentage to GPA Converter</a> uses standard international brackets recognized by major credential evaluation organizations. It provides an excellent estimate for personal screening purposes. However, if a university requires an official GPA conversion, they will typically request a paid evaluation from an accredited agency rather than accepting self-reported conversions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="pt-12 mt-12 border-t border-slate-200">
                             <Link href="/contact" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
                                 Contact Support for Clarifications

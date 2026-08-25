@@ -140,6 +140,46 @@ export default function TermsAndConditions() {
                             </p>
                         </div>
 
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <Scale className="w-5 h-5 text-slate-400" />
+                                5. Governing Law and Jurisdiction
+                            </h2>
+                            <p>
+                                These Terms shall be governed and construed in accordance with the laws applicable to online educational information services, without regard to conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+                            </p>
+                            <p>
+                                If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between you and EduGPA.online regarding the use of our academic calculation platform.
+                            </p>
+                        </div>
+
+                        <div className="space-y-4">
+                            <h2 className="text-2xl flex items-center gap-3 pb-2 border-b border-slate-100">
+                                <AlertCircle className="w-5 h-5 text-slate-400" />
+                                6. Frequently Asked Questions About These Terms
+                            </h2>
+                            <div className="space-y-6">
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Can I embed your calculators on my own website?</h3>
+                                    <p>
+                                        No. Embedding our tools via iFrames or any form of direct code reproduction without prior written permission is a violation of our intellectual property rights. If you are an educational institution interested in a partnership or integration, please <a href="/contact">contact our team</a> to discuss licensing arrangements.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Can I link to your tools from my blog or academic website?</h3>
+                                    <p>
+                                        Yes. We encourage organic backlinking to our tools and guides. You are free to reference and link to any page on EduGPA.online, provided you do not misrepresent our content or imply official affiliation with any specific university.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">How often are these terms updated?</h3>
+                                    <p>
+                                        We review and update these Terms and Conditions periodically to reflect changes in our platform, services, or legal requirements. Continued use of the platform after a revision constitutes acceptance of the updated terms. Major changes will be announced via a notice on the homepage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="pt-12 mt-12 border-t border-slate-200">
                             <Link href="/contact" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
                                 Legal Inquiries Contact

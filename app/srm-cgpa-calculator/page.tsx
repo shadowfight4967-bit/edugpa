@@ -107,22 +107,34 @@ export default function SRMCGPACalculatorPage() {
                         
                         <div>
                             <h2>Comprehensive SRM Grade Calculation Guide</h2>
+                            <p>
+                                <strong>Quick Answer:</strong> The official SRM CGPA Calculator allows students to accurately aggregate their semester grades using the university's strict 10-point scale. Simply input the exact credits and grade points earned in each semester to instantly calculate your Cumulative Grade Point Average and its percentage equivalent.
+                            </p>
+                            
+                            <h3>Key Takeaways</h3>
+                            <ul>
+                                <li>SRM University uses a 10-point grading scale where an 'O' (Outstanding) equals 10.0 points.</li>
+                                <li>To calculate an accurate CGPA, you must weight each semester's SGPA against the specific number of credits taken during that term.</li>
+                                <li>A CGPA of 7.5 or higher is generally required to clear the automated screening rounds for top-tier campus placements.</li>
+                                <li>This digital calculator automates the complex weighted average math instantly, ensuring your academic tracking is perfectly accurate.</li>
+                            </ul>
+
                             <h3>Understanding the SRM CGPA System</h3>
                             <p>
-                                The SRM Institute of Science and Technology (SRMIST) is renowned for its rigorous academic curriculum and robust grading system. For students striving for excellence, understanding the nuances of the <strong>SRM CGPA Calculator</strong> is not just helpful—it is absolutely essential for academic survival and success.
+                                The SRM Institute of Science and Technology (SRMIST) is renowned for its rigorous academic curriculum. Navigating through university life involves a multitude of challenges, from maintaining strict attendance to clearing difficult papers. Amidst this, manually calculating and tracking your Cumulative Grade Point Average (CGPA) should not be another administrative burden. 
                             </p>
                             <p>
-                                Navigating through university life involves a multitude of challenges, from maintaining attendance to clearing difficult papers. Amidst this, manually tracking your Cumulative Grade Point Average (CGPA) should not be another hurdle. This comprehensive guide, alongside our powerful calculator tool above, is designed to demystify the 10-point scale grading system utilized across all SRM campuses.
-                            </p>
-                            <p>
-                                Whether you are aiming for prestigious placements, securing international internships, seeking higher education admissions abroad, or trying to secure academic scholarships, a high CGPA is your golden ticket. The SRM CGPA Calculator provides an instant, mathematically accurate assessment of where you stand globally.
+                                Whether you are aiming for prestigious placements, securing international internships, seeking higher education admissions abroad, or trying to secure merit-based scholarships, a high CGPA is your golden ticket. Understanding exactly how this number is calculated prevents end-of-semester surprises and allows you to strategically plan your study hours.
                             </p>
                         </div>
 
                         <div>
                             <h3>How This SRM CGPA Calculator Works</h3>
                             <p>
-                                Manual CGPA calculation can be confusing, especially when different semesters possess wildly different credit totals. The traditional method of averaging your SGPAs without factoring in total semester credits leads to mathematically incorrect results. Our SRM calculator removes this guesswork and provides reliable results instantly by utilizing a rigorous weighted average algorithm.
+                                Manual calculation is highly prone to human error, especially when different semesters possess wildly different credit totals. A common mistake students make is simply averaging their SGPAs together. This traditional method ignores the credit weighting and leads to mathematically incorrect results. 
+                            </p>
+                            <p>
+                                Our SRM calculator removes this guesswork. It utilizes the rigorous weighted average algorithm officially mandated by the university.
                             </p>
                             <p>
                                 <strong>The Official Formula Used:</strong><br/>
@@ -133,7 +145,7 @@ export default function SRMCGPACalculatorPage() {
                                 <code>Percentage = CGPA × 10</code>
                             </p>
                             <p>
-                                When you input your data into our calculator, it takes the SGPA of each semester, multiplies it by the respective semester credits to determine your total "Quality Points" for that term. It then aggregates all Quality Points across your entire academic lifecycle and divides it by the total cumulative credits attempted. This ensures a 100% accurate reflection of your academic standing.
+                                When you input your data, the calculator multiplies the SGPA of each semester by the respective semester credits to determine your total "Quality Points" for that term. It then aggregates all Quality Points across your entire academic lifecycle and divides it by the total cumulative credits attempted.
                             </p>
                         </div>
 

@@ -92,6 +92,7 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-04-14",
         category: "Academic Success",
         readTime: "7 min read",
+    },
     {
         slug: "how-to-calculate-gpa-in-usa",
         title: "How to Calculate GPA in the USA: A Complete Guide",

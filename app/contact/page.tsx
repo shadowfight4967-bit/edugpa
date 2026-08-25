@@ -181,6 +181,36 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+
+            {/* SEO Content Section */}
+            <section className="bg-white py-20 border-t border-slate-200">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate">
+                    <h2>How We Can Help You</h2>
+                    <p>
+                        <strong>Quick Answer:</strong> The EduGPA support team handles questions about GPA conversion formulas, CGPA calculation methodology, and suggestions for new academic tools. Whether you are a student confused about how your percentage translates to a 4.0 scale or a university advisor looking for a verified conversion resource, we are here to help.
+                    </p>
+
+                    <h3>Common Reasons Students Contact Us</h3>
+                    <ul>
+                        <li><strong>Formula Verification:</strong> Many students reach out to confirm that the conversion logic used in our <a href="/cgpa-calculator">CGPA Calculator</a> or <a href="/percentage-to-gpa">Percentage to GPA Converter</a> aligns with their specific university&apos;s grading policy.</li>
+                        <li><strong>New Tool Requests:</strong> We regularly receive and act on suggestions for calculators tailored to specific university systems (such as our dedicated <a href="/srm-cgpa-calculator">SRM CGPA Calculator</a>).</li>
+                        <li><strong>Guide Corrections:</strong> If you spot a factual inaccuracy in any of our academic guides, we appreciate corrections and will update the content promptly.</li>
+                        <li><strong>Partnership Inquiries:</strong> Educational institutions and academic bloggers interested in linking to or collaborating with our tools are welcome to reach out.</li>
+                    </ul>
+
+                    <h3>Our Commitment to Accurate Responses</h3>
+                    <p>
+                        Every inquiry we receive is reviewed by someone with direct experience in academic grading systems. We do not use automated chatbots for support. When you submit a message through the form above, a real person reads it, researches the answer if necessary, and provides a thorough, accurate response. Our average reply time is four business hours during weekday support windows.
+                    </p>
+
+                    <h3>Frequently Asked Questions</h3>
+                    <h4>Do you offer phone support?</h4>
+                    <p>No. As a lean, remote-first educational team, we provide support exclusively via email. This allows us to give detailed, well-researched written answers to every academic question.</p>
+
+                    <h4>Can you help me calculate my GPA for a specific university?</h4>
+                    <p>We can point you to the correct tool and methodology, but we cannot calculate official GPAs for individual students. For certified transcript evaluations, you should contact a credential evaluator like WES (World Education Services).</p>
+                </div>
+            </section>
         </>
     );
 }

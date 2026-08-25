@@ -98,22 +98,31 @@ export default function AboutPage() {
 
                     <div className="prose prose-slate max-w-none text-slate-700 space-y-12 prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-blue-600">
                         <div>
-                            <h2>An Independent Educational Utility</h2>
+                            <h2>An Independent Educational Utility Built for Students</h2>
                             <p>
-                                EduGPA.online was established to address a recurring pattern in academia: students missing out on scholarships, internships, or higher education opportunities simply because they lacked the tools to accurately track or convert their academic standing (CGPA, SGPA, and Percentages).
+                                <strong>Our Story:</strong> EduGPA.online was established to address a recurring, frustrating pattern in academia. Year after year, highly capable students miss out on merit-based scholarships, international internships, and graduate school admissions simply because they lack the tools to accurately track or convert their academic standing.
                             </p>
                             <p>
-                                As an independent platform, we are wholly focused on providing tools that strictly adhere to official university grading algorithms. Our calculators do not rely on approximations; they are built to mirror the exact mathematics utilized by university examination boards, such as the standard 10-point scales used globally.
+                                When calculating a Cumulative Grade Point Average (CGPA) or converting a raw percentage for a foreign university application, a mathematical error of 0.1 can be the difference between an acceptance letter and an automated rejection. We built this platform to ensure that never happens to you.
                             </p>
+                            
+                            <h3>Why Trust Our Tools?</h3>
+                            <p>
+                                As an independent educational platform, we are wholly focused on providing calculators that strictly adhere to official university grading algorithms. 
+                            </p>
+                            <ul>
+                                <li><strong>No Approximations:</strong> Our tools do not rely on rough estimates. They are programmed to mirror the exact weighted mathematics utilized by university examination boards, such as the standard 10-point scales used globally.</li>
+                                <li><strong>Verified Conversion Logic:</strong> Our percentage-to-GPA converters utilize established, universally recognized grading brackets (such as those referenced by global credential evaluators) to provide the most accurate estimations possible.</li>
+                            </ul>
                         </div>
 
                         <div>
                             <h2>Privacy by Design</h2>
                             <p>
-                                We fundamentally believe that your academic data belongs to you alone. EduGPA.online is built entirely on modern client-side technologies. This means that when you use our tools, the calculations are executed directly within your web browser. 
+                                We fundamentally believe that your academic data belongs to you, and you alone. Unlike many educational platforms that harvest student data for marketing purposes, EduGPA.online is built entirely on modern client-side technologies. 
                             </p>
                             <p>
-                                <strong>We do not collect, transmit, or store your course grades or academic standing on any external servers.</strong> Your privacy is guaranteed by our architecture.
+                                This architecture means that when you use our calculators, the mathematical operations are executed directly within your own web browser. <strong>We do not collect, transmit, or store your course grades, CGPA, or personal academic standing on any external servers.</strong> Your privacy is mathematically guaranteed by our infrastructure.
                             </p>
                         </div>
 

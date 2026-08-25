@@ -326,6 +326,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Homepage SEO Content Section */}
+      <section className="section bg-white border-t border-slate-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate prose-lg">
+          <h2>Your Complete Academic Grade Resource</h2>
+          <p>
+            <strong>Quick Answer:</strong> EduGPA.online is a free, privacy-first academic platform that helps students calculate their Cumulative Grade Point Average (CGPA), convert percentage marks to international grading scales, and access expert-written guides on academic planning. All tools run entirely in your browser — no data is ever stored.
+          </p>
+
+          <h3>What is a Grade Point Average (GPA)?</h3>
+          <p>
+            A Grade Point Average is a standardized numerical representation of your academic performance. Universities around the world use different scales — the United States uses a 4.0 scale, India commonly uses a 10-point CGPA system, and European institutions follow the ECTS framework. Understanding how your grades translate across these systems is essential for international applications, scholarships, and employment.
+          </p>
+
+          <h3>Why Students Trust EduGPA</h3>
+          <p>
+            We built EduGPA because we noticed a gap: students were making critical mathematical errors when manually calculating their cumulative averages or converting grades for foreign applications. A misplaced decimal can mean the difference between qualifying for a scholarship and missing the cutoff entirely.
+          </p>
+          <ul>
+            <li><strong>Weighted Accuracy:</strong> Our <a href="/cgpa-calculator">CGPA Calculator</a> uses the proper credit-weighted formula, not a simple average of semester GPAs.</li>
+            <li><strong>International Brackets:</strong> Our <a href="/percentage-to-gpa">Percentage to GPA Converter</a> maps your scores using region-specific brackets rather than flawed direct division.</li>
+            <li><strong>University-Specific Tools:</strong> Tools like our <a href="/srm-cgpa-calculator">SRM CGPA Calculator</a> are calibrated to match the exact grading policies of specific institutions.</li>
+            <li><strong>Expert Guides:</strong> Every article in our <a href="/guides">resource library</a> is written following E-E-A-T principles — demonstrating real experience, expertise, and trustworthiness.</li>
+          </ul>
+
+          <h3>How to Get Started</h3>
+          <p>
+            If you know your semester GPAs and credit hours, head directly to the <a href="/cgpa-calculator">CGPA Calculator</a> to aggregate your cumulative score. If your university provides percentage marks instead of grade points, start with the <a href="/percentage-to-gpa">Percentage to GPA Converter</a> to translate your scores first.
+          </p>
+          <p>
+            For deeper academic strategies — such as how to improve a low CGPA in your final year, the difference between SGPA and CGPA, or what GPA you need for a Master&apos;s degree abroad — browse our comprehensive <a href="/guides">student guides</a>.
+          </p>
+
+          <h3>Frequently Asked Questions</h3>
+          <h4>Is EduGPA completely free?</h4>
+          <p>Yes. Every calculator and guide on this platform is 100% free to use. There are no paywalls, no premium tiers, and no hidden fees.</p>
+
+          <h4>Do you store my grades or personal information?</h4>
+          <p>No. All calculations happen directly in your browser using client-side JavaScript. Your academic data never leaves your device. We have no servers that store student grades.</p>
+
+          <h4>Which grading systems do you support?</h4>
+          <p>We currently support the US 4.0 scale, the 10-point CGPA scale (common in India and parts of Asia), the UK degree classification system, and the European ECTS framework. Our percentage converter handles all major international brackets.</p>
+        </div>
+      </section>
     </>
   );
 }

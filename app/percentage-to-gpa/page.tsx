@@ -43,23 +43,47 @@ export default function PercentageToGPAPage() {
           <PercentageToGPA />
 
           <div className="max-w-3xl mx-auto mt-16 prose prose-slate">
-            <h2>Understanding the Conversion</h2>
+            <h2>Understanding Percentage to GPA Conversions</h2>
             <p>
-              Different education systems across the world use different grading scales. While universities in the US commonly use a <strong>4.0 GPA scale</strong>, institutions in India and other regions often use percentages or a <strong>10.0 CGPA scale</strong>.
+              <strong>Quick Answer:</strong> This tool instantly converts your raw academic percentage into universally recognized grading formats. Simply input your percentage, and it will automatically generate your equivalent score on the US 4.0 GPA scale, the international 10.0 CGPA scale, and the corresponding academic letter grade.
             </p>
             
-            <h3>How to convert Percentage to a 10.0 CGPA</h3>
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Converting a percentage to a 10.0 scale uses a mathematical ratio (dividing by 9.5).</li>
+              <li>Converting a percentage to a 4.0 scale relies on regional grade brackets, as direct math is inaccurate.</li>
+              <li>Universities in North America primarily evaluate candidates based on the 4.0 GPA scale.</li>
+              <li>This calculator provides a highly accurate estimate based on standard global conversion logic, but official admissions require certified credential evaluators.</li>
+            </ul>
+
+            <h3>How the 10.0 CGPA Conversion Works</h3>
             <p>
-              The most commonly accepted formula for converting a percentage to a 10-point CGPA is dividing the percentage by 9.5. For example, if you scored 85%, your estimated CGPA would be 85 / 9.5 = 8.94.
+              In countries like India, many educational boards (such as CBSE) utilize a 10-point scale. The universally accepted mathematical formula for converting a raw percentage to this 10-point CGPA is straightforward: 
+            </p>
+            <p>
+              <strong>CGPA = Percentage ÷ 9.5</strong>
+            </p>
+            <p>
+              For example, if your final transcript shows an 85%, your estimated CGPA would be calculated as 85 / 9.5, which equals 8.94. Our calculator handles this instantly for you.
             </p>
 
-            <h3>How to convert Percentage to a 4.0 GPA</h3>
+            <h3>How the 4.0 GPA Conversion Works</h3>
             <p>
-              Converting to a 4.0 scale is usually done using grade brackets rather than a direct mathematical formula. Our calculator maps standard percentage brackets to their equivalent 4.0 scale value based on widely accepted international guidelines (like those provided by WES - World Education Services).
+              The biggest mistake students make is trying to divide their percentage to find their US 4.0 GPA. The US grading system is not perfectly linear. A 60% is a failing grade in the US, but it is often a passing grade internationally. 
             </p>
-
+            <p>
+              Therefore, converting to a 4.0 scale requires mapping your percentage to a specific "bracket." Our calculator maps standard international percentage brackets to their equivalent 4.0 scale value based on widely accepted guidelines used by organizations like WES (World Education Services).
+            </p>
+            
+            <h3>Frequently Asked Questions</h3>
+            <h4>Can I put this converted GPA on my resume?</h4>
+            <p>Yes, if you are applying for international roles, listing your converted 4.0 GPA provides valuable context for employers. However, it is best practice to include your original percentage in parentheses next to it.</p>
+            
+            <h4>Is this conversion accepted by universities?</h4>
+            <p>This tool is excellent for personal tracking and initial university screening. However, for formal applications to competitive Master's programs, universities will require an official, paid credential evaluation to certify your transcript.</p>
+            
             <blockquote>
-              <strong>Disclaimer:</strong> This tool provides an estimate. If you are applying for universities abroad, you may be required to get an official credential evaluation from an organization like WES or ECE, as specific university conversion formulas can vary.
+              <strong>Disclaimer:</strong> This tool provides a highly accurate estimate based on standard international conversion metrics. Specific university conversion formulas can vary.
             </blockquote>
           </div>
         </div>

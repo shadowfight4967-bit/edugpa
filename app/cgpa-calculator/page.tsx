@@ -43,21 +43,44 @@ export default function CGPACalculatorPage() {
           <CGPACalculator />
 
           <div className="max-w-3xl mx-auto mt-16 prose prose-slate">
-            <h2>How to Use the CGPA Calculator</h2>
+            <h2>Understanding Your Cumulative Grade Point Average</h2>
             <p>
-              Your Cumulative Grade Point Average (CGPA) is a measure of your overall academic performance across all semesters.
+              <strong>Quick Answer:</strong> The free CGPA calculator above allows you to instantly compute your Cumulative Grade Point Average by aggregating your semester GPAs based on credit hours. Simply enter your GPA and credits for each term, click "Add Semester," and the tool will automatically generate your final cumulative score.
+            </p>
+            
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>A Cumulative Grade Point Average (CGPA) is a weighted average of all your individual semester grades.</li>
+              <li>Your total credit hours directly impact the weight of a specific semester on your final score.</li>
+              <li>Consistently tracking your CGPA prevents end-of-term surprises and allows for data-driven academic planning.</li>
+              <li>This calculator operates entirely in your browser; your academic data is never stored or tracked.</li>
+            </ul>
+
+            <h3>How to Use This CGPA Calculator</h3>
+            <p>
+              Tracking your academic standing across multiple semesters can involve tedious math, especially if your semesters have varying credit loads. Our tool simplifies this process entirely:
             </p>
             <ol>
-              <li>Enter the <strong>GPA</strong> you achieved for a given semester.</li>
-              <li>Enter the total <strong>Credits</strong> for that semester.</li>
-              <li>Click <strong>Add Semester</strong> to include more semesters in your calculation.</li>
-              <li>Your overall CGPA and total credits will automatically update at the bottom.</li>
+              <li><strong>Input Your Semester Data:</strong> Locate the first row and enter the GPA you achieved for that specific term (e.g., 3.6).</li>
+              <li><strong>Add Credit Hours:</strong> Enter the total number of credits you completed during that term (e.g., 15).</li>
+              <li><strong>Add Multiple Semesters:</strong> Click the "Add Semester" button to generate a new row for your next term.</li>
+              <li><strong>Review Your Results:</strong> Your overall CGPA and total aggregated credits will automatically update in the blue summary box at the bottom of the tool.</li>
             </ol>
             
-            <h3>Why is Tracking CGPA Important?</h3>
+            <h3>Why is Tracking Your CGPA Important?</h3>
             <p>
-              Many scholarships, graduate programs, and employers use your CGPA as a benchmark for academic success. Tracking it semester-by-semester helps you identify where you stand and what grades you need to reach your academic goals.
+              Your CGPA is the defining metric of your university career. It is the single number evaluated by scholarship committees, graduate admissions boards, and top-tier employers. 
             </p>
+            <p>
+              By tracking it semester-by-semester using this calculator, you can accurately forecast what grades you need in your final year to hit specific thresholds. If you need to convert an international percentage to a GPA before using this tool, try our <a href="/percentage-to-gpa">Percentage to GPA Converter</a>.
+            </p>
+
+            <h3>Frequently Asked Questions</h3>
+            <h4>Does this tool support a 10-point scale?</h4>
+            <p>Yes. The mathematics behind a weighted average are identical regardless of the scale. You can enter a 9.2 GPA on a 10-point scale, and the calculator will aggregate it flawlessly.</p>
+            
+            <h4>How does course weight affect my CGPA?</h4>
+            <p>Heavier semesters (e.g., 18 credits) have a significantly larger impact on your final cumulative average than lighter semesters (e.g., 12 credits). The calculator automatically handles this mathematical weighting for you.</p>
           </div>
         </div>
       </section>
