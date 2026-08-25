@@ -11,6 +11,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-10",
         category: "Conversions",
         readTime: "7 min read",
+        featuredImage: "/percentage-to-cgpa-conversion-guide.webp",
+        contentImage: "/percentage-to-10-point-cgpa-formula.webp",
     },
     {
         slug: "gpa-vs-sgpa-vs-cgpa-explained",
@@ -20,6 +22,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-12",
         category: "GPA Basics",
         readTime: "6 min read",
+        featuredImage: "/gpa-vs-sgpa-vs-cgpa-explained.webp",
+        contentImage: "/sgpa-to-cgpa-credit-weighted-calculation.webp",
     },
     {
         slug: "tips-to-improve-semester-gpa",
@@ -29,6 +33,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-12",
         category: "Study Tips",
         readTime: "8 min read",
+        featuredImage: "/tips-to-improve-semester-gpa.webp",
+        contentImage: "/prioritize-high-credit-courses-gpa.webp",
     },
     {
         slug: "understanding-gpa-conversion-charts",
@@ -38,6 +44,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-13",
         category: "Global Education",
         readTime: "9 min read",
+        featuredImage: "/global-gpa-conversion-charts-guide.webp",
+        contentImage: "/international-gpa-scale-comparison.webp",
     },
     {
         slug: "how-to-track-sgpa-each-semester",
@@ -47,15 +55,19 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-14",
         category: "Calculations",
         readTime: "7 min read",
+        featuredImage: "/how-to-track-sgpa-each-semester.webp",
+        contentImage: "/sgpa-calculation-credit-weighted-example.webp",
     },
     {
         slug: "best-free-academic-tools-for-students",
-        title: "Best Free Academic Tools for Students in 2025",
+        title: "Best Free Academic Tools for Students in 2026",
         excerpt:
             "From GPA calculators to productivity apps and citation generators — here are the best free academic tools every student should bookmark right now.",
         date: "2026-03-14",
         category: "Study Tips",
         readTime: "8 min read",
+        featuredImage: "/best-free-academic-tools-for-students-2026.webp",
+        contentImage: "/student-free-academic-tech-stack.webp",
     },
     {
         slug: "common-tech-problems-students-face",
@@ -65,6 +77,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-03-20",
         category: "Tech Tips",
         readTime: "12 min read",
+        featuredImage: "/common-tech-problems-students-studying-gaming.webp",
+        contentImage: "/student-laptop-cloud-backup-troubleshooting.webp",
     },
     {
         slug: "academic-performance-tracking-strategies",
@@ -74,6 +88,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-04-14",
         category: "Study Tips",
         readTime: "6 min read",
+        featuredImage: "/mastering-gpa-academic-performance-tracking.webp",
+        contentImage: "/gpa-what-if-scenario-grade-tracking..webp",
     },
     {
         slug: "essential-online-tools-python-courses-students",
@@ -83,6 +99,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-04-14",
         category: "Career Development",
         readTime: "8 min read",
+        featuredImage: "/student-tech-stack-data-science-careers.webp",
+        contentImage: "/student-learning-python-data-analysis.webp",
     },
     {
         slug: "how-technology-is-changing-education-2026",
@@ -92,6 +110,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-04-14",
         category: "Academic Success",
         readTime: "7 min read",
+        featuredImage: "/future-of-learning-edtech-2026.webp",
+        contentImage: "/ai-hybrid-flipped-classroom-learning.webp",
     },
     {
         slug: "how-to-calculate-gpa-in-usa",
@@ -100,6 +120,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-05-01",
         category: "Global Education",
         readTime: "8 min read",
+        featuredImage: "/how-to-calculate-gpa-in-the-usa-featured.webp",
+        contentImage: "/gpa-calculation-quality-points-example.webp",
     },
     {
         slug: "understanding-european-ects-grading-system",
@@ -108,6 +130,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-05-02",
         category: "Global Education",
         readTime: "7 min read",
+        featuredImage: "/understanding-european-ects-grading-system-featured.webp",
+        contentImage: "/ects-credits-degree-structure-explained.webp",
     },
     {
         slug: "what-is-a-good-cgpa-for-masters-abroad",
@@ -116,6 +140,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-05-03",
         category: "Career Development",
         readTime: "9 min read",
+        featuredImage: "/good-cgpa-for-masters-abroad-2026.webp",
+        contentImage: "/masters-abroad-cgpa-country-comparison.webp",
     },
     {
         slug: "difference-between-gpa-and-grades-percentage",
@@ -124,6 +150,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-05-04",
         category: "GPA Basics",
         readTime: "6 min read",
+        featuredImage: "/gpa-grades-percentage-difference.webp",
+        contentImage: "/percentage-letter-grade-gpa-conversion.webp",
     },
     {
         slug: "how-to-improve-cgpa-in-final-year",
@@ -132,6 +160,8 @@ export const PLACEHOLDER_POSTS: BlogPost[] = [
         date: "2026-05-05",
         category: "Academic Success",
         readTime: "7 min read",
+        featuredImage: "/can-i-improve-cgpa-final-year..webp",
+        contentImage: "/final-year-cgpa-calculation-strategy.webp",
     }
 ];
 

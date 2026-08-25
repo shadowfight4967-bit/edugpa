@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, SITE_NAME, SITE_URL } from "@/lib/metadata";
@@ -5,15 +6,9 @@ import {
     BookOpen,
     ArrowRight,
     Clock,
-    TrendingUp,
-    Target,
-    Calculator,
-    Settings,
-    Globe2,
     GraduationCap,
     Sparkles,
     Search,
-    ChevronRight
 } from "lucide-react";
 import { PLACEHOLDER_POSTS } from "@/lib/posts";
 
@@ -91,37 +86,47 @@ export default function GuidesPage() {
             <section className="pt-16 pb-32">
                 <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {PLACEHOLDER_POSTS.map((post, i) => (
+                        {PLACEHOLDER_POSTS.map((post) => (
                             <Link
                                 key={post.slug}
                                 href={`/guides/${post.slug}`}
                                 className="group bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-slate-300 transition-all flex flex-col h-full overflow-hidden"
                             >
-                                <div className="p-8 flex flex-col h-full">
-                                    <div className="flex items-center justify-between mb-8">
-                                        <span className="text-[11px] font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1.5 rounded-full">{post.category}</span>
-                                        <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-blue-50 transition-colors">
-                                            {i === 0 ? <Globe2 className="w-5 h-5 text-blue-500" /> :
-                                                i === 1 ? <Target className="w-5 h-5 text-indigo-500" /> :
-                                                    i === 2 ? <TrendingUp className="w-5 h-5 text-cyan-500" /> :
-                                                        i === 3 ? <Settings className="w-5 h-5 text-slate-600" /> :
-                                                            i === 4 ? <Calculator className="w-5 h-5 text-emerald-500" /> :
-                                                                <BookOpen className="w-5 h-5 text-blue-600" />}
+                                {/* Featured thumbnail */}
+                                <div className="relative w-full aspect-[16/9] bg-slate-100 overflow-hidden">
+                                    {post.featuredImage ? (
+                                        <Image
+                                            src={post.featuredImage}
+                                            alt={post.title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-slate-100">
+                                            <BookOpen className="w-10 h-10 text-blue-300" />
                                         </div>
-                                    </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">
-                                        {post.title}
-                                    </h3>
-                                    <p className="text-slate-600 text-sm leading-relaxed mb-8 line-clamp-3">
-                                        {post.excerpt}
-                                    </p>
-                                    <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between">
-                                        <div className="flex items-center gap-2 text-slate-500 text-xs font-semibold uppercase tracking-wider">
-                                            <Clock className="w-4 h-4" />
+                                    )}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                </div>
+
+                                <div className="p-6 flex flex-col flex-1">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <span className="text-[11px] font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1.5 rounded-full">{post.category}</span>
+                                        <div className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider">
+                                            <Clock className="w-3.5 h-3.5" />
                                             <span>{post.readTime}</span>
                                         </div>
+                                    </div>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors leading-tight line-clamp-2">
+                                        {post.title}
+                                    </h3>
+                                    <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-4">
+                                        {post.excerpt}
+                                    </p>
+                                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-end">
                                         <span className="text-blue-600 font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                                            Read Mode
+                                            Read Guide
                                             <ArrowRight className="w-4 h-4" />
                                         </span>
                                     </div>

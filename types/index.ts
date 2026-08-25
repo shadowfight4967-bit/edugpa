@@ -6,6 +6,8 @@ export interface BlogPost {
     category: string;
     readTime: string;
     coverImage?: string;
+    featuredImage?: string;
+    contentImage?: string;
 }
 
 export interface NavLink {

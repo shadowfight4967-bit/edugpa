@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${post.title} — ${SITE_NAME}`,
         description: post.excerpt,
         path: `/guides/${slug}`,
+        ogImage: post.featuredImage ?? "/og-image.png",
     });
 }
 
@@ -275,11 +277,49 @@ export default async function GuidePostPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* Featured Image */}
+            {post.featuredImage && (
+                <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-2 pb-4">
+                    <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                        <Image
+                            src={post.featuredImage}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            priority
+                            sizes="(max-width: 768px) 100vw, 896px"
+                        />
+                    </div>
+                </section>
+            )}
+
             {/* Main Content Reader */}
             <section className="pt-16 pb-32">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <article className="prose prose-lg prose-slate max-w-none">
-                        {content ? <SimpleMarkdownRenderer content={content} /> : <div className="py-20 text-center"><p className="text-slate-500 font-bold uppercase tracking-widest animate-pulse">Loading content...</p></div>}
+                        {content ? (
+                            <>
+                                <SimpleMarkdownRenderer content={content} />
+                                {post.contentImage && (
+                                    <figure className="my-12">
+                                        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                                            <Image
+                                                src={post.contentImage}
+                                                alt={`Visual: ${post.title}`}
+                                                fill
+                                                className="object-cover"
+                                                sizes="(max-width: 768px) 100vw, 768px"
+                                            />
+                                        </div>
+                                        <figcaption className="mt-3 text-center text-sm text-slate-500 font-medium">
+                                            {post.title}
+                                        </figcaption>
+                                    </figure>
+                                )}
+                            </>
+                        ) : (
+                            <div className="py-20 text-center"><p className="text-slate-500 font-bold uppercase tracking-widest animate-pulse">Loading content...</p></div>
+                        )}
                     </article>
                 </div>
             </section>
