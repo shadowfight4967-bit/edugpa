@@ -73,61 +73,61 @@ export default function ContactPage() {
 
                         {/* Contact Form Glass Card */}
                         <div className="lg:col-span-2 order-2 lg:order-1">
-                            <div className="card-glass p-8 md:p-14 shadow-2xl border-white/60">
-                                <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-10 flex items-center gap-4 uppercase tracking-tight">
+                            <div className="card-glass p-6 sm:p-8 md:p-14 shadow-2xl border-white/60">
+                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-8 md:mb-10 flex items-center gap-4 uppercase tracking-tight">
                                     Send Message
-                                    <Send className="w-8 h-8 text-blue-600" />
+                                    <Send className="w-8 h-8 text-blue-600 hidden sm:block" />
                                 </h2>
 
-                                <form className="space-y-8">
-                                    <div className="grid sm:grid-cols-2 gap-8">
-                                        <div className="space-y-3">
+                                <form className="space-y-6 md:space-y-8">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+                                        <div className="space-y-2 md:space-y-3">
                                             <label htmlFor="name" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Full Name</label>
                                             <input
                                                 type="text"
                                                 id="name"
-                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-6 py-5 rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-lg"
+                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-base md:text-lg"
                                                 placeholder="e.g. Saad bin Ahmed"
                                             />
                                         </div>
-                                        <div className="space-y-3">
+                                        <div className="space-y-2 md:space-y-3">
                                             <label htmlFor="email" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">University Email</label>
                                             <input
                                                 type="email"
                                                 id="email"
-                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-6 py-5 rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-lg"
+                                                className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all font-bold text-base md:text-lg"
                                                 placeholder="e.g. name@university.edu"
                                             />
                                         </div>
                                     </div>
 
-                                    <div className="space-y-3">
+                                    <div className="space-y-2 md:space-y-3">
                                         <label htmlFor="subject" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Reason for Contact</label>
                                         <div className="relative">
-                                            <select id="subject" className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-6 py-5 rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all appearance-none font-bold text-lg">
+                                            <select id="subject" className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all appearance-none font-bold text-base md:text-lg">
                                                 <option>General Feedback</option>
                                                 <option>GPA Formula Query</option>
                                                 <option>Guide Request</option>
                                                 <option>Bug Report</option>
                                             </select>
                                             <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
-                                                <ChevronRight className="w-6 h-6 rotate-90" />
+                                                <ChevronRight className="w-5 h-5 md:w-6 md:h-6 rotate-90" />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-3">
+                                    <div className="space-y-2 md:space-y-3">
                                         <label htmlFor="message" className="block text-xs font-black text-slate-500 uppercase tracking-widest pl-1">Your Message</label>
                                         <textarea
                                             id="message"
-                                            rows={6}
-                                            className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-6 py-5 rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all resize-none font-bold text-lg"
+                                            rows={5}
+                                            className="w-full bg-white/50 backdrop-blur-sm border border-white/80 px-5 py-4 md:px-6 md:py-5 rounded-2xl md:rounded-[1.5rem] text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 focus:bg-white transition-all resize-none font-bold text-base md:text-lg"
                                             placeholder="How can we assist you today?"
                                         ></textarea>
                                     </div>
 
-                                    <div className="flex items-center gap-4 text-emerald-700 bg-emerald-50 px-6 py-4 rounded-2xl font-bold text-sm border border-emerald-100">
-                                        <ShieldCheck className="w-5 h-5 shrink-0" />
+                                    <div className="flex items-start sm:items-center gap-3 md:gap-4 text-emerald-700 bg-emerald-50 px-5 py-4 rounded-2xl font-bold text-xs sm:text-sm border border-emerald-100">
+                                        <ShieldCheck className="w-5 h-5 shrink-0 mt-0.5 sm:mt-0" />
                                         Your information is protected by industry-standard encryption.
                                     </div>
 
@@ -136,9 +136,9 @@ export default function ContactPage() {
                                         <input type="checkbox" name="contact_me_by_fax_only" tabIndex={-1} autoComplete="off" />
                                     </div>
 
-                                    <button type="submit" className="btn-primary w-full py-6 text-xl font-black shadow-2xl shadow-blue-500/30 group">
+                                    <button type="submit" className="btn-primary w-full py-5 md:py-6 text-lg md:text-xl font-black shadow-2xl shadow-blue-500/30 group flex justify-center items-center gap-2">
                                         Send Application Message
-                                        <ArrowRight className="w-7 h-7 group-hover:translate-x-3 transition-transform" />
+                                        <ArrowRight className="w-6 h-6 md:w-7 md:h-7 group-hover:translate-x-2 md:group-hover:translate-x-3 transition-transform" />
                                     </button>
                                 </form>
                             </div>

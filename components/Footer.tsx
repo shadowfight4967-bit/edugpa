@@ -105,6 +105,9 @@ export default function Footer() {
                         <Link href="/disclaimer" className="text-slate-500 hover:text-white text-sm transition-colors">
                             Disclaimer
                         </Link>
+                        <Link href="/dmca" className="text-slate-500 hover:text-white text-sm transition-colors">
+                            DMCA
+                        </Link>
                     </div>
                 </div>
             </div>
