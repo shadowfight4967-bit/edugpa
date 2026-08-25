@@ -297,27 +297,46 @@ export default async function GuidePostPage({ params }: Props) {
             <section className="pt-16 pb-32">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <article className="prose prose-lg prose-slate max-w-none">
-                        {content ? (
-                            <>
-                                <SimpleMarkdownRenderer content={content} />
-                                {post.contentImage && (
-                                    <figure className="my-12">
-                                        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
-                                            <Image
-                                                src={post.contentImage}
-                                                alt={`Visual: ${post.title}`}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(max-width: 768px) 100vw, 768px"
-                                            />
-                                        </div>
-                                        <figcaption className="mt-3 text-center text-sm text-slate-500 font-medium">
-                                            {post.title}
-                                        </figcaption>
-                                    </figure>
-                                )}
-                            </>
-                        ) : (
+                        {content ? (() => {
+                            // Split after the 2nd ## heading for a natural mid-article break
+                            const lines = content.split("\n");
+                            let h2Count = 0;
+                            let splitIndex = -1;
+                            for (let i = 0; i < lines.length; i++) {
+                                if (lines[i].trimStart().startsWith("## ")) {
+                                    h2Count++;
+                                    if (h2Count === 2) { splitIndex = i; break; }
+                                }
+                            }
+                            // Fallback: split at ~40% of lines
+                            if (splitIndex === -1) splitIndex = Math.floor(lines.length * 0.4);
+
+                            const firstHalf = lines.slice(0, splitIndex).join("\n");
+                            const secondHalf = lines.slice(splitIndex).join("\n");
+
+                            return (
+                                <>
+                                    <SimpleMarkdownRenderer content={firstHalf} />
+                                    {post.contentImage && (
+                                        <figure className="my-12 not-prose">
+                                            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                                                <Image
+                                                    src={post.contentImage}
+                                                    alt={`Visual illustration: ${post.title}`}
+                                                    fill
+                                                    className="object-cover"
+                                                    sizes="(max-width: 768px) 100vw, 768px"
+                                                />
+                                            </div>
+                                            <figcaption className="mt-3 text-center text-sm text-slate-500 font-medium italic">
+                                                {post.title}
+                                            </figcaption>
+                                        </figure>
+                                    )}
+                                    <SimpleMarkdownRenderer content={secondHalf} />
+                                </>
+                            );
+                        })() : (
                             <div className="py-20 text-center"><p className="text-slate-500 font-bold uppercase tracking-widest animate-pulse">Loading content...</p></div>
                         )}
                     </article>
