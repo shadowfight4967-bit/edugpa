@@ -4,7 +4,7 @@ import CGPACalculator from "@/components/CGPACalculator";
 import Image from "next/image";
 
 export const metadata = buildMetadata({
-  title: "CGPA Calculator — Calculate Cumulative GPA",
+  title: "CGPA Calculator | Fast & Accurate",
   description: "Calculate your Cumulative Grade Point Average (CGPA) effortlessly with our accurate and free CGPA calculator.",
   path: "/cgpa-calculator",
 });

@@ -4,7 +4,7 @@ import PercentageToGPA from "@/components/PercentageToGPA";
 import Image from "next/image";
 
 export const metadata = buildMetadata({
-  title: "Percentage to GPA Converter",
+  title: "Percentage to GPA Converter | EduGPA",
   description: "Convert your percentage to a 4.0 GPA, 10.0 CGPA, or letter grade with our free and accurate online converter.",
   path: "/percentage-to-gpa",
 });

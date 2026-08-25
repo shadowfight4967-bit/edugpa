@@ -20,7 +20,7 @@ import {
 import { PLACEHOLDER_POSTS } from "@/lib/posts";
 
 export const metadata = buildMetadata({
-  title: "EduGPA — Understand & Track Your GPA Easily",
+  title: "EduGPA | Free GPA & CGPA Calculators",
   description: "The ultimate academic resource for students. Calculate GPA, SGPA, CGPA, and convert percentages to global scales with accuracy and ease.",
 });
 

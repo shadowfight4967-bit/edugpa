@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = buildMetadata({
-    title: "SRM CGPA Calculator — Official 10-Point Scale Conversion",
+    title: "SRM CGPA Calculator",
     description: "The most authoritative, professional, and convenient online CGPA calculator for SRM University. Strictly follows the official SRM 10-point grading system.",
     path: "/srm-cgpa-calculator",
 });

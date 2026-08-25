@@ -280,12 +280,13 @@ export default async function GuidePostPage({ params }: Props) {
             {/* Featured Image */}
             {post.featuredImage && (
                 <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-2 pb-4">
-                    <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                    <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-50">
                         <Image
                             src={post.featuredImage}
                             alt={post.title}
-                            fill
-                            className="object-cover"
+                            width={1200}
+                            height={675}
+                            className="w-full h-auto"
                             priority
                             sizes="(max-width: 768px) 100vw, 896px"
                         />
@@ -319,12 +320,13 @@ export default async function GuidePostPage({ params }: Props) {
                                     <SimpleMarkdownRenderer content={firstHalf} />
                                     {post.contentImage && (
                                         <figure className="my-12 not-prose">
-                                            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                                            <div className="w-full rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-50">
                                                 <Image
                                                     src={post.contentImage}
                                                     alt={`Visual illustration: ${post.title}`}
-                                                    fill
-                                                    className="object-cover"
+                                                    width={1200}
+                                                    height={675}
+                                                    className="w-full h-auto"
                                                     sizes="(max-width: 768px) 100vw, 768px"
                                                 />
                                             </div>
