@@ -4,7 +4,7 @@ import { AlertTriangle, Info, FileText, ShieldAlert, ChevronRight, ArrowLeft } f
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `Disclaimer — ${SITE_NAME}`,
+    title: `Disclaimer`,
     description: "Official legal and educational disclaimer for the EduGPA academic platform.",
     path: "/disclaimer",
 });

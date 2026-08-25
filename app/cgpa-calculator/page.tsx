@@ -139,7 +139,7 @@ export default function CGPACalculatorPage() {
               Most accredited graduate programs in the United States and Canada enforce a minimum CGPA cutoff of 3.0 on the 4.0 scale. Competitive programs at research-intensive universities typically admit students with CGPAs of 3.5 or higher. Elite programs — medical schools, top law schools, Ivy League PhD programs — maintain effective admissions averages at or above 3.8.
             </p>
             <p>
-              For international students, your home country CGPA must be converted to the 4.0 scale through a NACES-certified credential evaluation service (such as WES or ECE) before formal assessment. For a full breakdown of what CGPA different countries require, read our guide on <a href="/guides/what-is-a-good-cgpa-for-masters-abroad">what is a good CGPA for a Master&apos;s abroad</a>.
+              For international students, your home country CGPA must be converted to the 4.0 scale through a NACES-certified credential evaluation service (such as <a href="https://www.wes.org/" target="_blank" rel="noopener noreferrer">WES</a> or ECE) before formal assessment. For a full breakdown of what CGPA different countries require, read our guide on <a href="/guides/what-is-a-good-cgpa-for-masters-abroad">what is a good CGPA for a Master&apos;s abroad</a>.
             </p>
 
             <h4>Corporate Recruitment</h4>

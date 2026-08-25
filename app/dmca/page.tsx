@@ -4,7 +4,7 @@ import { ShieldAlert, FileText, ChevronRight, ArrowLeft, Mail, Gavel } from "luc
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `DMCA Policy — ${SITE_NAME}`,
+    title: `DMCA Policy`,
     description: "Digital Millennium Copyright Act (DMCA) policy and takedown request procedures for EduGPA.",
     path: "/dmca",
 });

@@ -107,7 +107,7 @@ export default function PercentageToGPAPage() {
               While this calculator is excellent for personal tracking, resume building, and initial university shortlisting, it is an <em>unofficial</em> estimate. When you formally apply to Master's or PhD programs in the United States or Canada, universities will rarely accept your self-reported converted GPA.
             </p>
             <p>
-              You will almost always be required to submit your transcripts to a credential evaluation agency that is a member of NACES (National Association of Credential Evaluation Services). The most popular of these is <strong>WES (World Education Services)</strong>. 
+              You will almost always be required to submit your transcripts to a credential evaluation agency that is a member of NACES (National Association of Credential Evaluation Services). The most popular of these is <a href="https://www.wes.org/" target="_blank" rel="noopener noreferrer"><strong>WES (World Education Services)</strong></a>.
             </p>
             <p>
               These agencies analyze your specific university's historical grading trends. For example, if your university is known for extremely strict grading where nobody ever scores above 75%, WES might evaluate your 70% as a 4.0 GPA. Our calculator provides the closest possible approximation to a standard WES evaluation without paying the official evaluation fee.

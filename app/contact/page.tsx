@@ -4,7 +4,7 @@ import { Mail, MapPin, Clock, Send, MessageSquare, ShieldCheck, ChevronRight, Ar
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `Contact Academic Support — ${SITE_NAME}`,
+    title: `Contact Academic Support`,
     description: "Have a question about our GPA conversion formulas or need help with our tools? Reach out to the EduGPA team today.",
     path: "/contact",
 });

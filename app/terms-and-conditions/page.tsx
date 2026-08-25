@@ -4,7 +4,7 @@ import { Scale, BookOpen, AlertCircle, FileText, ChevronRight, ArrowLeft } from 
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `Terms and Conditions — ${SITE_NAME}`,
+    title: `Terms and Conditions`,
     description: "Binding legal terms and conditions governing the use of the EduGPA academic calculation platform.",
     path: "/terms-and-conditions",
 });

@@ -13,7 +13,7 @@ import {
 import { PLACEHOLDER_POSTS } from "@/lib/posts";
 
 export const metadata = buildMetadata({
-    title: `Academic Guides — ${SITE_NAME}`,
+    title: `Academic Guides`,
     description: "Comprehensive guides on GPA calculation, SGPA tracking, and global grade conversion. Master your academic journey with EduGPA.",
     path: "/guides",
 });

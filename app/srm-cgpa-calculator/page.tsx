@@ -122,7 +122,7 @@ export default function SRMCGPACalculatorPage() {
 
                             <h3>Understanding the SRM CGPA System</h3>
                             <p>
-                                The SRM Institute of Science and Technology (SRMIST) is renowned for its rigorous academic curriculum. Navigating through university life involves a multitude of challenges, from maintaining strict attendance to clearing difficult papers. Amidst this, manually calculating and tracking your Cumulative Grade Point Average (CGPA) should not be another administrative burden. 
+                                The <a href="https://www.srmist.edu.in/" target="_blank" rel="noopener noreferrer">SRM Institute of Science and Technology (SRMIST)</a> is renowned for its rigorous academic curriculum. Navigating through university life involves a multitude of challenges, from maintaining strict attendance to clearing difficult papers. Amidst this, manually calculating and tracking your Cumulative Grade Point Average (CGPA) should not be another administrative burden.
                             </p>
                             <p>
                                 Whether you are aiming for prestigious placements, securing international internships, seeking higher education admissions abroad, or trying to secure merit-based scholarships, a high CGPA is your golden ticket. Understanding exactly how this number is calculated prevents end-of-semester surprises and allows you to strategically plan your study hours.

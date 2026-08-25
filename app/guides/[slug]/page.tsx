@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const post = getPostBySlug(slug);
     if (!post) return {};
     return buildMetadata({
-        title: `${post.title} — ${SITE_NAME}`,
+        title: `${post.title}`,
         description: post.excerpt,
         path: `/guides/${slug}`,
         ogImage: post.featuredImage ?? "/og-image.png",

@@ -4,7 +4,7 @@ import { Target, Users, ShieldCheck, Heart, ArrowRight, GraduationCap } from "lu
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `About Our Mission — ${SITE_NAME}`,
+    title: `About Our Mission`,
     description: "Learn about the mission behind EduGPA.online and our dedication to providing accurate academic tracking and conversion tools.",
     path: "/about",
 });

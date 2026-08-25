@@ -4,7 +4,7 @@ import { ShieldCheck, Lock, Eye, FileText, ChevronRight, ArrowLeft, Cookie, Glob
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-    title: `Privacy Policy — ${SITE_NAME}`,
+    title: `Privacy Policy`,
     description: "Comprehensive Privacy Policy outlining our data collection, processing, and protection protocols at EduGPA.",
     path: "/privacy-policy",
 });
