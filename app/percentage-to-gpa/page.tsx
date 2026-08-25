@@ -1,6 +1,7 @@
 import { buildMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
 import PercentageToGPA from "@/components/PercentageToGPA";
+import Image from "next/image";
 
 export const metadata = buildMetadata({
   title: "Percentage to GPA Converter",
@@ -126,6 +127,21 @@ export default function PercentageToGPAPage() {
             <p>
               Use this tool early in your academic career to set goals. If your target graduate program in the US requires a minimum 3.0 GPA, you know you must maintain at least a Second Division (55%+) average in your home country. For competitive programs requiring a 3.5+, you should aim for consistent First Class (60%+) marks. Read our guide on <a href="/guides/what-is-a-good-cgpa-for-masters-abroad">what is a good CGPA for a Master's abroad</a> for more specific program targets.
             </p>
+
+            <figure className="not-prose my-10">
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                <Image
+                  src="/how-to-use-Percentage to GPA Converter.webp"
+                  alt="How to use the Percentage to GPA Converter — step by step visual guide"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 768px"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-slate-500 italic font-medium">
+                Visual guide: Converting your percentage to GPA using the converter tool
+              </figcaption>
+            </figure>
 
             <h3>Frequently Asked Questions</h3>
             <h4>Does a 100% equal a 5.0 GPA?</h4>

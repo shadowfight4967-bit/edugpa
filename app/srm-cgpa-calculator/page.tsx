@@ -3,6 +3,7 @@ import { buildMetadata, SITE_NAME, SITE_URL } from "@/lib/metadata";
 import SRMCGPACalculator from "@/components/SRMCGPACalculator";
 import { Calculator, ArrowLeft, ChevronRight, BookOpen, Clock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = buildMetadata({
     title: "SRM CGPA Calculator — Official 10-Point Scale Conversion",
@@ -147,6 +148,21 @@ export default function SRMCGPACalculatorPage() {
                             <p>
                                 When you input your data, the calculator multiplies the SGPA of each semester by the respective semester credits to determine your total "Quality Points" for that term. It then aggregates all Quality Points across your entire academic lifecycle and divides it by the total cumulative credits attempted.
                             </p>
+
+                            <figure className="not-prose my-10">
+                                <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                                    <Image
+                                        src="/SRM CGPA Calculator.webp"
+                                        alt="How to use the SRM CGPA Calculator — step by step visual guide"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 768px"
+                                    />
+                                </div>
+                                <figcaption className="mt-3 text-center text-sm text-slate-500 italic font-medium">
+                                    Visual guide: Using the SRM CGPA Calculator to aggregate your semester grades
+                                </figcaption>
+                            </figure>
                         </div>
 
                         <div>

@@ -1,6 +1,7 @@
 import { buildMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
 import CGPACalculator from "@/components/CGPACalculator";
+import Image from "next/image";
 
 export const metadata = buildMetadata({
   title: "CGPA Calculator — Calculate Cumulative GPA",
@@ -65,6 +66,21 @@ export default function CGPACalculatorPage() {
               <li><strong>Add Multiple Semesters:</strong> Click the &quot;Add Semester&quot; button to generate a new row for your next term.</li>
               <li><strong>Review Your Results:</strong> Your overall CGPA and total aggregated credits will automatically update in the summary box at the bottom of the tool.</li>
             </ol>
+
+            <figure className="not-prose my-10">
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                <Image
+                  src="/cgpa-calculator.webp"
+                  alt="How to use the CGPA Calculator — step by step visual guide"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 768px"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-slate-500 italic font-medium">
+                Visual guide: Using the CGPA Calculator to track your semester grades
+              </figcaption>
+            </figure>
 
             <h2>What Is a CGPA and Why Does It Matter?</h2>
             <p>
