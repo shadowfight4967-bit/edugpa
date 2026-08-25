@@ -39,8 +39,8 @@ export default function ContactPage() {
         },
         {
             title: "Support Hours",
-            val: "Mon - Fri, 9am - 6pm",
-            sub: "UTC-5 Timezone",
+            val: "24 hours",
+            sub: "UTC-5",
             Icon: Clock,
             color: "text-cyan-600 bg-white/50",
         },
@@ -66,118 +66,104 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Main Grid with Cards */}
-            <section className="section bg-white pt-20 pb-32">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-3 gap-12">
+            {/* Contact Form Section */}
+            <section className="bg-white pt-20 pb-20">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-white p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 rounded-3xl">
+                        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-10 flex items-center justify-center gap-3 text-center">
+                            Send a Message
+                            <Send className="w-6 h-6 text-blue-600" />
+                        </h2>
 
-                        {/* Contact Form Card */}
-                        <div className="lg:col-span-2 order-2 lg:order-1">
-                            <div className="bg-white p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 rounded-3xl">
-                                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-10 flex items-center gap-3">
-                                    Send a Message
-                                    <Send className="w-6 h-6 text-blue-600 hidden sm:block" />
-                                </h2>
-
-                                <form className="space-y-8">
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                                        <div className="space-y-2">
-                                            <label htmlFor="name" className="block text-sm font-semibold text-slate-700">Full Name</label>
-                                            <input
-                                                type="text"
-                                                id="name"
-                                                className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
-                                                placeholder="e.g. Saad bin Ahmed"
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label htmlFor="email" className="block text-sm font-semibold text-slate-700">University Email</label>
-                                            <input
-                                                type="email"
-                                                id="email"
-                                                className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
-                                                placeholder="e.g. name@university.edu"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <label htmlFor="subject" className="block text-sm font-semibold text-slate-700">Reason for Contact</label>
-                                        <div className="relative">
-                                            <select id="subject" className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all appearance-none text-base">
-                                                <option>General Feedback</option>
-                                                <option>GPA Formula Query</option>
-                                                <option>Guide Request</option>
-                                                <option>Bug Report</option>
-                                            </select>
-                                            <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
-                                                <ChevronRight className="w-5 h-5 rotate-90" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <label htmlFor="message" className="block text-sm font-semibold text-slate-700">Your Message</label>
-                                        <textarea
-                                            id="message"
-                                            rows={5}
-                                            className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all resize-none text-base"
-                                            placeholder="How can we assist you today?"
-                                        ></textarea>
-                                    </div>
-
-                                    <div className="flex items-start sm:items-center gap-3 text-emerald-700 bg-emerald-50 px-5 py-4 rounded-xl text-sm font-medium border border-emerald-100">
-                                        <ShieldCheck className="w-5 h-5 shrink-0 mt-0.5 sm:mt-0" />
-                                        Your information is protected by industry-standard encryption.
-                                    </div>
-
-                                    {/* Honeypot field for anti-spam */}
-                                    <div className="hidden">
-                                        <input type="checkbox" name="contact_me_by_fax_only" tabIndex={-1} autoComplete="off" />
-                                    </div>
-
-                                    <button type="submit" className="btn-primary w-full py-5 text-lg font-bold shadow-md shadow-blue-600/10 group flex justify-center items-center gap-2 rounded-xl">
-                                        Send Message
-                                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-
-                        {/* Sidebar Info Cards */}
-                        <div className="order-1 lg:order-2 space-y-6">
-                            <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 md:p-10 relative overflow-hidden shadow-sm">
-                                <h2 className="text-2xl font-bold text-slate-900 mb-8 relative z-10">Support Info</h2>
-                                <ul className="space-y-6 sm:space-y-8 relative z-10">
-                                    {contactCards.map((card, i) => (
-                                        <li key={i} className="flex items-start sm:items-center gap-4 sm:gap-5">
-                                            <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white border border-slate-200 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-sm text-blue-600">
-                                                <card.Icon className="w-5 h-5 sm:w-6 sm:h-6" />
-                                            </div>
-                                            <div className="min-w-0 flex-1">
-                                                <p className="text-slate-500 text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-1">{card.title}</p>
-                                                <p className="text-slate-900 font-bold text-base sm:text-lg mb-0.5 truncate">{card.val}</p>
-                                                <p className="text-slate-500 text-xs sm:text-sm font-medium">{card.sub}</p>
-                                            </div>
-                                        </li>
-                                    ))}
-                                </ul>
-                                {/* Decorative Element */}
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 blur-[50px] -mr-16 -mt-16 rounded-full pointer-events-none" />
+                        <form className="space-y-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                                <div className="space-y-2">
+                                    <label htmlFor="name" className="block text-sm font-semibold text-slate-700">Full Name</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
+                                        placeholder="e.g. Saad bin Ahmed"
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <label htmlFor="email" className="block text-sm font-semibold text-slate-700">University Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
+                                        placeholder="e.g. name@university.edu"
+                                    />
+                                </div>
                             </div>
 
-                            {/* Response Time Note */}
-                            <div className="bg-blue-50 p-6 sm:p-8 rounded-3xl border border-blue-100">
-                                <h3 className="text-blue-800 font-bold mb-3 flex items-center gap-2 text-base">
-                                    <Clock className="w-5 h-5" />
-                                    Rapid Protocol
-                                </h3>
-                                <p className="text-blue-900/80 font-medium text-sm leading-relaxed mb-0">
-                                    Our verified team typically responds within <strong className="text-blue-900 font-bold">4 business hours</strong> for academic inquiries.
-                                </p>
+                            <div className="space-y-2">
+                                <label htmlFor="subject" className="block text-sm font-semibold text-slate-700">Reason for Contact</label>
+                                <div className="relative">
+                                    <select id="subject" className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all appearance-none text-base">
+                                        <option>General Feedback</option>
+                                        <option>GPA Formula Query</option>
+                                        <option>Guide Request</option>
+                                        <option>Bug Report</option>
+                                    </select>
+                                    <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                        <ChevronRight className="w-5 h-5 rotate-90" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
+                            <div className="space-y-2">
+                                <label htmlFor="message" className="block text-sm font-semibold text-slate-700">Your Message</label>
+                                <textarea
+                                    id="message"
+                                    rows={5}
+                                    className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all resize-none text-base"
+                                    placeholder="How can we assist you today?"
+                                ></textarea>
+                            </div>
+
+                            <div className="flex items-start sm:items-center gap-3 text-emerald-700 bg-emerald-50 px-5 py-4 rounded-xl text-sm font-medium border border-emerald-100">
+                                <ShieldCheck className="w-5 h-5 shrink-0 mt-0.5 sm:mt-0" />
+                                Your information is protected by industry-standard encryption.
+                            </div>
+
+                            {/* Honeypot field for anti-spam */}
+                            <div className="hidden">
+                                <input type="checkbox" name="contact_me_by_fax_only" tabIndex={-1} autoComplete="off" />
+                            </div>
+
+                            <button type="submit" className="btn-primary w-full py-5 text-lg font-bold shadow-md shadow-blue-600/10 group flex justify-center items-center gap-2 rounded-xl">
+                                Send Message
+                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            {/* Support Info Cards Below Form */}
+            <section className="bg-slate-50 py-20 border-t border-slate-200">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Support Information</h2>
+                        <p className="text-slate-600 font-medium">We're here to help you navigate global grading systems.</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {contactCards.map((card, i) => (
+                            <div key={i} className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300 relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 blur-[40px] rounded-full pointer-events-none group-hover:bg-blue-100 transition-colors" />
+                                
+                                <div className={`w-16 h-16 rounded-2xl border border-slate-100 flex items-center justify-center mb-6 shadow-sm relative z-10 ${card.color}`}>
+                                    <card.Icon className="w-8 h-8" />
+                                </div>
+                                <div className="relative z-10 w-full">
+                                    <p className="text-slate-500 text-[11px] font-bold uppercase tracking-widest mb-2">{card.title}</p>
+                                    <p className="text-slate-900 font-bold text-lg mb-1 truncate w-full">{card.val}</p>
+                                    <p className="text-slate-500 text-sm font-medium">{card.sub}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
