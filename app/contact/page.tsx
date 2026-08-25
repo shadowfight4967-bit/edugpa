@@ -75,13 +75,24 @@ export default function ContactPage() {
                             <Send className="w-6 h-6 text-blue-600" />
                         </h2>
 
-                        <form className="space-y-8">
+                        <form
+                            action="https://api.web3forms.com/submit"
+                            method="POST"
+                            className="space-y-8"
+                        >
+                            {/* Web3Forms access key */}
+                            <input type="hidden" name="access_key" value="43185710-6665-4d34-8081-aab6f7879d09" />
+                            {/* Redirect after successful submission (optional — remove to stay on same page) */}
+                            <input type="hidden" name="redirect" value="false" />
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="block text-sm font-semibold text-slate-700">Full Name</label>
                                     <input
                                         type="text"
                                         id="name"
+                                        name="name"
+                                        required
                                         className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
                                         placeholder="e.g. Saad bin Ahmed"
                                     />
@@ -91,6 +102,8 @@ export default function ContactPage() {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
+                                        required
                                         className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all text-base"
                                         placeholder="e.g. name@university.edu"
                                     />
@@ -100,7 +113,11 @@ export default function ContactPage() {
                             <div className="space-y-2">
                                 <label htmlFor="subject" className="block text-sm font-semibold text-slate-700">Reason for Contact</label>
                                 <div className="relative">
-                                    <select id="subject" className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all appearance-none text-base">
+                                    <select
+                                        id="subject"
+                                        name="subject"
+                                        className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all appearance-none text-base"
+                                    >
                                         <option>General Feedback</option>
                                         <option>GPA Formula Query</option>
                                         <option>Guide Request</option>
@@ -116,6 +133,8 @@ export default function ContactPage() {
                                 <label htmlFor="message" className="block text-sm font-semibold text-slate-700">Your Message</label>
                                 <textarea
                                     id="message"
+                                    name="message"
+                                    required
                                     rows={5}
                                     className="w-full bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white transition-all resize-none text-base"
                                     placeholder="How can we assist you today?"
@@ -127,10 +146,8 @@ export default function ContactPage() {
                                 Your information is protected by industry-standard encryption.
                             </div>
 
-                            {/* Honeypot field for anti-spam */}
-                            <div className="hidden">
-                                <input type="checkbox" name="contact_me_by_fax_only" tabIndex={-1} autoComplete="off" />
-                            </div>
+                            {/* Honeypot field for anti-spam (web3forms supports this natively) */}
+                            <input type="checkbox" name="botcheck" className="hidden" />
 
                             <button type="submit" className="btn-primary w-full py-5 text-lg font-bold shadow-md shadow-blue-600/10 group flex justify-center items-center gap-2 rounded-xl">
                                 Send Message
